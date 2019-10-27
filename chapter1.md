@@ -362,7 +362,7 @@ A fisherman typically catches $3$   fish a day. Use the Poisson distribution to 
 
 ---
 
-## Insert exercise title here
+## Classify distributions
 
 ```yaml
 type: DragAndDropExercise
@@ -384,7 +384,7 @@ Identify which distributions are continuous (the results can be any number) and 
   title: "Distributions"
 
 - id: cont
-  title: "Continuous distributions (at least potentially)"
+  title: "Continuous distributions"
   items: # Each drop zone has a list of items it contains. These will be shown in a random fashion.
     - content: "Normal"
       id: normal # ID of the item. This can be used in the SCTs.
