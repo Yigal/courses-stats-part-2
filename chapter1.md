@@ -342,16 +342,19 @@ key: c79f6d9d8f
 xp: 50
 ```
 
-The [Poisson distribution](https://en.wikipedia.org/wiki/Poisson_distribution) is the number of events the actually happen in a period of time when the events are randomly timed and the expected number of events in a period is $\lambda$. 
+The [Poisson distribution](https://en.wikipedia.org/wiki/Poisson_distribution) is the number of events the actually happen in a period of time when the events are randomly timed and the expected number of events in a period is $\lambda$. The probability of having k events happen is $Pois(k) = \frac{\lambda ^{k}e^{-\lambda}}{k!}$. 
 
-The probability of having k events happen is $Pois(k) = \frac{\lambda ^{k}e^{-\lambda}}{k!}$. 
+A fisherman typically catches $3$   fish a day. Use the Poisson distribution to identify the chance that his family won't have any dinner tonight because he hasn't caught any fishes.
 
 `@hint`
-
+- $\lambda^{0} = 1$
+- $0! = 1$
 
 `@possible_answers`
-- [Correct answer 1]
-- Wrong answer 2
-- Wrong answer 3
+- [< 5%]
+- 5%-10%
+- 10%-25%
+- 25%-50%
+- >50%
 
 `@feedback`
