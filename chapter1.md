@@ -331,3 +331,27 @@ print(sum/numTests)
 ```{python}
 # Check https://instructor-support.datacamp.com/en/articles/2375523-course-multiple-choice-with-console-exercises on how to write feedback messages for this exercise.
 ```
+
+---
+
+## Poisson distribution
+
+```yaml
+type: PureMultipleChoiceExercise
+key: c79f6d9d8f
+xp: 50
+```
+
+The [Poisson distribution](https://en.wikipedia.org/wiki/Poisson_distribution) is the number of events the actually happen in a period of time when the events are randomly timed and the expected number of events in a period is $\lambda$. 
+
+The probability of having k events happen is $Pois(k) = \frac{\lambda ^{k}e^{-\lambda}}{k!}$. 
+
+`@hint`
+
+
+`@possible_answers`
+- [Correct answer 1]
+- Wrong answer 2
+- Wrong answer 3
+
+`@feedback`
