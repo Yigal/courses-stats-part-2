@@ -284,7 +284,9 @@ xp: 50
 
 The [geometric distribution](https://en.wikipedia.org/wiki/Geometric_distribution) is the number of experiments needed until one is successful when the probability of a successful experiment is $p$. The [exponential distribution](https://en.wikipedia.org/wiki/Exponential_distribution) is similar, but extended to be continuous.
 
-Exponential distributions can also be defined by their [half life](https://en.wikipedia.org/wiki/Half-life). For example, if a certain medicine leaves the blood stream so that its half life in the blood is an hour, then $\int_{1}{2}$
+Exponential distributions can also be defined by their [half life](https://en.wikipedia.org/wiki/Half-life). For example, if a certain medicine leaves the blood stream so that its half life in the blood is an hour, then $\int_{0}^{1} \lambda e^{-t\lambda} dt = 0.5 $. We don't need to actually do the integral, because somebody already did it for us. This is a frequency distribution, so we can use its [cumulative distribution function](https://en.wikipedia.org/wiki/Cumulative_distribution_function) to see that the amount that leaves the body until time $t$ is $1-e^{-\lambda t}$. In other words, $1-e^{-\lambda} = 0.5 \implies e^{-\lambda} = 0.5 \implies \lambda = ln(2) $
+
+
 
 `@hint`
 
