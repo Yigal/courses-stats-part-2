@@ -25,3 +25,32 @@ Which of these distributions has mostly low values with a few high ones?
 - Bernoulli
 
 `@feedback`
+
+
+---
+
+## Uniform distribution
+
+```yaml
+type: PureMultipleChoiceExercise
+key: b0025d5748
+xp: 50
+```
+
+In a [uniform distribution](http://mathworld.wolfram.com/UniformDistribution.html) each value has an equal probability. 
+
+`@hint`
+<!-- Examples of good hints: https://instructor-support.datacamp.com/en/articles/2379164-hints-best-practices. -->
+- This is an example hint.
+- This is an example hint.
+
+`@possible_answers`
+- [Correct answer 1]
+- Wrong answer 2
+- Wrong answer 3
+
+`@feedback`
+<!-- Examples of good feedback messages: https://instructor-support.datacamp.com/en/articles/2299773-exercise-success-messages.  -->
+- Perfect!
+- Error message answer 2
+- Error message answer 3
