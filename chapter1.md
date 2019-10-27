@@ -118,7 +118,7 @@ print (successes/total_tests)
 
 ---
 
-## Normal distribution mean
+## Towards the normal distribution
 
 ```yaml
 type: PureMultipleChoiceExercise
@@ -137,5 +137,28 @@ To get the mean you add all the values together and divide by the number of valu
 - It gets smaller
 - [It stays roughly the same]
 - It gets bigger
+
+`@feedback`
+
+
+---
+
+## The actual normal distribution
+
+```yaml
+type: PureMultipleChoiceExercise
+key: 86a76077b7
+xp: 50
+```
+
+The ideal normal distribution is the limit in case we add an infinite number of random values. Its shape is controlled by two parameters: [the mean](https://en.wikipedia.org/wiki/Mean) and [the standard deviation](https://en.wikipedia.org/wiki/Standard_deviation). 
+
+`@hint`
+
+
+`@possible_answers`
+- [Correct answer 1]
+- Wrong answer 2
+- Wrong answer 3
 
 `@feedback`
