@@ -274,7 +274,7 @@ If you don't want to think about it, experiment with [the distributions page](ht
 
 ---
 
-## Insert exercise title here
+## Geometric and exponential distributions
 
 ```yaml
 type: MultipleChoiceExercise
