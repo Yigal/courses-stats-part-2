@@ -39,8 +39,6 @@ xp: 50
 
 In a [uniform distribution](http://mathworld.wolfram.com/UniformDistribution.html) each value has an equal probability. For example, when you throw dice you have an equal chance of getting 1, 2, 3, etc.
 
-
-
 `@hint`
 
 
