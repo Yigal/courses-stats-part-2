@@ -115,3 +115,27 @@ print (successes/total_tests)
 ```{python}
 
 ```
+
+---
+
+## Normal distribution
+
+```yaml
+type: PureMultipleChoiceExercise
+key: 1cb9ff71b2
+xp: 50
+```
+
+The [Central Limit Theorem](https://en.wikipedia.org/wiki/Central_limit_theorem) states that as the number of random variables added increases the overall distribution gets closer and closer to the [normal distribution](https://en.wikipedia.org/wiki/Normal_distribution). 
+
+Use the [distributions web page](http://simple-tech.com/public_html/statistics/distributions.html) to see what happens to the mean value when you use one random value in the (-1,1) range as opposed to adding two, ten, or a hundred.
+
+`@hint`
+
+
+`@possible_answers`
+- It gets smaller
+- [It stays roughly the same]
+- It gets bigger
+
+`@feedback`
