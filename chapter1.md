@@ -266,7 +266,30 @@ If you don't want to think about it, experiment with [the distributions page](ht
 `@possible_answers`
 - [If you increase either $n$ or $p$, the mean number of successful experiments increases]
 - If you increase either $n$ or $p$, the mean number of successful experiments decreases
-- If you increase either $n$ or $p$, the mean does not change. But if you increase both $n$ and $p$ it increases
-- If you increase either $n$ or $p$, the mean does not change. But if you increase both $n$ and $p$ it decreases
+- If you increase either $n$ or $p$, the mean does not change. But if you increase both $n$ and $p$ the mean increases
+- If you increase either $n$ or $p$, the mean does not change. But if you increase both $n$ and $p$ the mean decreases
+
+`@feedback`
+
+
+---
+
+## Geometric and exponential distributions
+
+```yaml
+type: PureMultipleChoiceExercise
+key: 7e00b77d7e
+xp: 50
+```
+
+The [geometric distribution](https://en.wikipedia.org/wiki/Geometric_distribution) is the number of experiments needed until one is successful when the probability of a successful experiment is $p$. The [exponential distribution](https://en.wikipedia.org/wiki/Exponential_distribution) is similar, but extended to be continuous.
+
+Exponential distributions can also be defined by their [half life](https://en.wikipedia.org/wiki/Half-life). For example, if the chance 
+
+`@hint`
+
+
+`@possible_answers`
+
 
 `@feedback`
