@@ -284,12 +284,13 @@ xp: 50
 
 The [geometric distribution](https://en.wikipedia.org/wiki/Geometric_distribution) is the number of experiments needed until one is successful when the probability of a successful experiment is $p$. The [exponential distribution](https://en.wikipedia.org/wiki/Exponential_distribution) is similar, but extended to be continuous.
 
-Exponential distributions can also be defined by their [half life](https://en.wikipedia.org/wiki/Half-life). For example, if the chance 
+Exponential distributions can also be defined by their [half life](https://en.wikipedia.org/wiki/Half-life). For example, if a certain medicine leaves the blood stream so that its half life in the blood is an hour, then $\int_{1}{2}$
 
 `@hint`
 
 
 `@possible_answers`
-
+- [a]
+- b
 
 `@feedback`
