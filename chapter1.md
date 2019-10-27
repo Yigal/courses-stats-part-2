@@ -212,10 +212,11 @@ xp: 100
 
 
 `@instructions`
-Calculate the [Bernoulli distribution](https://en.wikipedia.org/wiki/Bernoulli_distribution) with $p=0.25, n=100$, and return it as a list of probabilities in the variable `bernoulliDist`.
+Calculate the [Bernoulli distribution](https://en.wikipedia.org/wiki/Bernoulli_distribution) with $p=0.25, n=10$, and return it as a list of probabilities in the variable `bernoulliDist`.
 
 `@hint`
-If we have $n$ experiments, the number of ways for $k$ of them to succeed is $\frac{n!}{k!(n-k)!}$
+- If we have $n$ experiments, the number of ways for $k$ of them to succeed is $\frac{n!}{k!(n-k)!}$.
+- If an experiment has a $p$ likelihood of success, it has a $1-p$ likelihood of failure.
 
 `@pre_exercise_code`
 ```{python}
@@ -229,10 +230,20 @@ If we have $n$ experiments, the number of ways for $k$ of them to succeed is $\f
 
 `@solution`
 ```{python}
+import math
+
+bernoulliDist = []
+n = 10
+nBang = math.factorial(n)
+p = 0.25
+
+for k in range(0,n+1):
+  bernoulliDist.append (p**k * (1-p)**(n-k) * nBang/(math.factorial(k)*math.factorial(n-k)) )
+
 
 ```
 
 `@sct`
 ```{python}
-# Examples of good success messages: https://instructor-support.datacamp.com/en/articles/2299773-exercise-success-messages.
+Ex().check_object("bernoulliDist").has_equal_value()
 ```
