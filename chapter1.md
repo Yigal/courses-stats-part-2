@@ -70,18 +70,19 @@ When you add multiple uniformly distributed variables, you get a distribution th
 
 ![Adding two dice](https://assets.datacamp.com/production/repositories/5515/datasets/7ea5ff962c69dcf1c150edeefb18b0be9b66ca75/two_dice.png)
 
-Out of 36 possible results, there is only one that gives a sum of two ($1+1$) and only one that gives a sum of twelve ($6+6$). However, there are six possibilities for seven ($1+6, 2+5, ... , 6+1$). 
+Out of 36 possible results, there is only one that gives a sum of two (1+1) and only one that gives a sum of twelve (6+6). However, there are six possibilities for seven (1+6 all through 6+1). 
 
-If we add three dice, we get this graph:
+If we add three dice, the effect is even more pronounced. We get this graph:
 
 ![Adding three dice](https://assets.datacamp.com/production/repositories/5515/datasets/91de587281abb23156c84c55fc4c34449c56c927/three_dice.png)
 
-Use Python to calculate the chance that when you throw four dice you'll get a value of ten or less.
+Use Python to figure out the chance the chance that when you throw four dice you'll get a value of ten or less.
 
 `@possible_answers`
-- [Correct answer 1]
-- Wrong answer 2
-- Wrong answer 3
+- 0.2
+- [0.3]
+- 0.4
+- 0.5
 
 `@hint`
 * You can simulate throwing a single die with `random.choice(range(1,6))`
@@ -103,10 +104,10 @@ successes = 0
 total_tests = 1000
 
 for i in range(total_tests):
-	if run_test():
-    	successes++
+    if run_test():
+        successes = successes+1
         
-print successses/total_tests
+print (successes/total_tests)
 """
 ```
 
