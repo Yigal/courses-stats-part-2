@@ -37,18 +37,19 @@ key: b0025d5748
 xp: 50
 ```
 
-In a [uniform distribution](http://mathworld.wolfram.com/UniformDistribution.html) each value has an equal probability. For example, when you throw dice you have an equal chance of getting 1, 2, 3, etc.
+In a [uniform distribution](http://mathworld.wolfram.com/UniformDistribution.html) each value has an equal probability. For example, when you throw dice you have an equal chance of getting each value.
+
+What is the chance of getting either one or six?
 
 `@hint`
 
 
 `@possible_answers`
-- [Correct answer 1]
-- Wrong answer 2
-- Wrong answer 3
+- 1/6
+- [1/3]
+- 1/2
+- 2/3
+- 5/6
+- 1
 
 `@feedback`
-<!-- Examples of good feedback messages: https://instructor-support.datacamp.com/en/articles/2299773-exercise-success-messages.  -->
-- Perfect!
-- Error message answer 2
-- Error message answer 3
