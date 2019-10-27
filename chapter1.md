@@ -247,3 +247,26 @@ for k in range(0,n+1):
 ```{python}
 Ex().check_object("bernoulliDist").has_equal_value()
 ```
+
+---
+
+## Bernoulli distribution
+
+```yaml
+type: PureMultipleChoiceExercise
+key: ec2e36cec4
+xp: 50
+```
+
+If you increase $n$, how would that affect the mean of the Bernoulli distribution? What if you increase $p$?
+
+`@hint`
+If you don't want to think about it, experiment with [the distributions page](http://simple-tech.com/public_html/statistics/distributions.html).
+
+`@possible_answers`
+- [If you increase either $n$ or $p$, the mean number of successful experiments increases]
+- If you increase either $n$ or $p$, the mean number of successful experiments decreases
+- If you increase either $n$ or $p$, the mean does not change. But if you increase both $n$ and $p$ it increases
+- If you increase either $n$ or $p$, the mean does not change. But if you increase both $n$ and $p$ it decreases
+
+`@feedback`
