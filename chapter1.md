@@ -151,7 +151,7 @@ key: 86a76077b7
 xp: 50
 ```
 
-The ideal normal distribution is the limit in case we add an infinite number of random values. When it is a [probability distribution](https://en.wikipedia.org/wiki/Probability_distribution) (meaning the total area is one unit) shape is controlled by two parameters: [the mean](https://en.wikipedia.org/wiki/Mean) and [the standard deviation](https://en.wikipedia.org/wiki/Standard_deviation). 
+The ideal normal distribution is the limit in case we add an infinite number of random values. When it is a [probability distribution](https://en.wikipedia.org/wiki/Probability_distribution) (meaning the total area is one unit) shape is controlled by two parameters: [the mean](https://en.wikipedia.org/wiki/Mean) and [the standard deviation](https://en.wikipedia.org/wiki/Standard_deviation). When the mean is zero and the standard deviation one, it is called the **standard normal distribution**.
 
 [Click here for a calculator that shows what the normal distribution looks like](https://www.desmos.com/calculator/2kmx0enkkz). The parameter `b` is used for the mean, and `a` is used for the standard deviation. How do these values affects [the skew](https://en.wikipedia.org/wiki/Skewness)? 
 
