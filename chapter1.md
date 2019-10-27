@@ -170,3 +170,30 @@ The ideal normal distribution is the limit in case we add an infinite number of 
 - [Neither the mean nor the standard deviation have any effect on the skew]
 
 `@feedback`
+
+
+---
+
+## Insert exercise title here
+
+```yaml
+type: PureMultipleChoiceExercise
+key: e0fc54c120
+xp: 50
+```
+
+The [Bernoulli distribution](https://en.wikipedia.org/wiki/Bernoulli_distribution) gives the number of successful experiments out of `n` when the probability of a single experiment being successful is `p`. Using either logic or experimentation with [the distributions page](http://simple-tech.com/public_html/statistics/distributions.html), figure out under what conditions, if any, the Bernoulli distribution approximates a normal distribution.
+
+`@hint`
+
+
+`@possible_answers`
+- `p` is 0.5, `n` is 1
+- [`p` is 0.5, `n` is high]
+- `p` is 0.25, `n` is 1
+- `p` is 0.25, `n` is high
+- `p` is 0.75, `n` is 1
+- `p` is 0.75, `n` is high
+- It is impossible to approximate a normal distribution with a Bernoulli distribution.
+
+`@feedback`
