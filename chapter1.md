@@ -131,7 +131,7 @@ The [Central Limit Theorem](https://en.wikipedia.org/wiki/Central_limit_theorem)
 Use the [distributions web page](http://simple-tech.com/public_html/statistics/distributions.html) to see what happens to the mean value when you use one random value in the (-1,1) range as opposed to adding two, ten, or a hundred.
 
 `@hint`
-To get the mean you add all the values together and divide by the number of values. If the variable is the sum of ten random numbers, and the distribution is a hundred values, then the mean value is the sum of a thousand random numbers divided by a thousand.
+To get the mean you add all the values together and divide by the number of values. If the variable is just one random number, and the distribution is a hundred values, then the mean value is the sum of a hundred random numbers divided by a hundred. If the variable is the sum of ten random numbers, and the distribution is a hundred values, then the mean value is the sum of a thousand random numbers divided by a thousand.
 
 `@possible_answers`
 - It gets smaller
