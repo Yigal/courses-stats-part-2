@@ -286,21 +286,45 @@ The [geometric distribution](https://en.wikipedia.org/wiki/Geometric_distributio
 
 Exponential distributions can also be defined by their [half life](https://en.wikipedia.org/wiki/Half-life). For example, if a certain medicine leaves the blood stream so that its half life in the blood is an hour, then $\int_{0}^{1} \lambda e^{-t\lambda} dt = 0.5 $. We don't need to actually do the integral, because somebody already did it for us. This is a frequency distribution, so we can use its [cumulative distribution function](https://en.wikipedia.org/wiki/Cumulative_distribution_function) to see that the amount that leaves the body until time $t$ is $1-e^{-\lambda t}$. In other words, $1-e^{-\lambda} = 0.5 \implies e^{-\lambda} = 0.5 \implies \lambda = ln(2) $.
 
-Use either mathematics or a Python program to calculate how many times we'd expect to throw a pair of fair dice until we get snake eyes (both dice land on one, which happens $\frac{1}{36}$ of the time).
+Use either mathematics or a Python program to calculate how many times we'd expect to throw a pair of fair dice until we get snake eyes (both dice land on one, which happens $\frac{1}{36}$ of the time). Select the correct range.
 
 
 
 `@possible_answers`
-- [Correct answer 1]
-- Wrong answer 2
-- Wrong answer 3
+- 0-10
+- 10-20
+- 20-30
+- [30-40]
+- 40-50
+- 50-60
 
 `@hint`
 
 
 `@pre_exercise_code`
 ```{python}
+"""
+import random
 
+def throw():
+  return random.random() < 1/36
+
+
+def untilSnakeEyes():
+  throws = 1
+  while(not throw()):
+    throws += 1
+  return throws
+
+
+numTests = 100
+
+sum = 0
+for i in range(numTests):
+  sum += untilSnakeEyes()
+
+print(sum/numTests)
+"""
 ```
 
 `@sct`
