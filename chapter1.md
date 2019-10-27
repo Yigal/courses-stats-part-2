@@ -42,14 +42,43 @@ In a [uniform distribution](http://mathworld.wolfram.com/UniformDistribution.htm
 What is the chance of getting either one or six?
 
 `@hint`
+There are six possibilities uniformly distributed, so the chance of each is $\frac{1}{6}$. The two events, one and six, are mutually exclusive so the chance of either happening is the chance of one plus the chance of the other.
+
+`@possible_answers`
+- $0$, it cannot happen
+- $\frac{1}{6}$
+- [$\frac{1}{3}$]
+- $\frac{1}{2}$
+- $\frac{2}{3}$
+- $\frac{5}{6}$
+- $1$, it always happens
+
+`@feedback`
+
+
+---
+
+## Normal distribution
+
+```yaml
+type: PureMultipleChoiceExercise
+key: 8237108b01
+xp: 50
+```
+
+When you add multiple uniformly distributed variables, you get a distribution that has more entries in the middle than in the edges. For example, if you add the results of two dice throws, you get a graph like this one:
+
+
+
+
+ [normal distribution](https://en.wikipedia.org/wiki/Normal_distribution)
+
+`@hint`
 
 
 `@possible_answers`
-- 1/6
-- [1/3]
-- 1/2
-- 2/3
-- 5/6
-- 1
+- [Correct answer 1]
+- Wrong answer 2
+- Wrong answer 3
 
 `@feedback`
