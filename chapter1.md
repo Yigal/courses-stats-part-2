@@ -37,7 +37,7 @@ key: b0025d5748
 xp: 50
 ```
 
-In a [uniform distribution](http://mathworld.wolfram.com/UniformDistribution.html) each value has an equal probability. 
+In a [uniform distribution](http://mathworld.wolfram.com/UniformDistribution.html) each value has an equal probability.  
 
 `@hint`
 <!-- Examples of good hints: https://instructor-support.datacamp.com/en/articles/2379164-hints-best-practices. -->
