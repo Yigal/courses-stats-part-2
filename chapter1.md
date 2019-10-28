@@ -153,7 +153,7 @@ xp: 50
 
 The ideal normal distribution is the limit in case we add an infinite number of random values. When it is a [probability distribution](https://en.wikipedia.org/wiki/Probability_distribution) (meaning the total area is one unit) shape is controlled by two parameters: [the mean](https://en.wikipedia.org/wiki/Mean) and [the standard deviation](https://en.wikipedia.org/wiki/Standard_deviation). When the mean is zero and the standard deviation one, it is called the **standard normal distribution**.
 
-[Click here for a calculator that shows what the normal distribution looks like](https://www.desmos.com/calculator/2kmx0enkkz). The parameter `b` is used for the mean, and `a` is used for the standard deviation. How do these values affects [the skew](https://en.wikipedia.org/wiki/Skewness)? 
+[Click here for a calculator that shows what the normal distribution looks like](https://www.desmos.com/calculator/2kmx0enkkz). The parameter `b` is used for the mean, and `a` is used for the standard deviation. How do these values affects [the skew](https://en.wikipedia.org/wiki/Skewness)?
 
 `@hint`
 
@@ -287,8 +287,6 @@ The [geometric distribution](https://en.wikipedia.org/wiki/Geometric_distributio
 Exponential distributions can also be defined by their [half life](https://en.wikipedia.org/wiki/Half-life). For example, if a certain medicine leaves the blood stream so that its half life in the blood is an hour, then $\int_{0}^{1} \lambda e^{-t\lambda} dt = 0.5 $. We don't need to actually do the integral, because somebody already did it for us. This is a frequency distribution, so we can use its [cumulative distribution function](https://en.wikipedia.org/wiki/Cumulative_distribution_function) to see that the amount that leaves the body until time $t$ is $1-e^{-\lambda t}$. In other words, $1-e^{-\lambda} = 0.5 \implies e^{-\lambda} = 0.5 \implies \lambda = ln(2) $.
 
 Use either mathematics or a Python program to calculate how many times we'd expect to throw a pair of fair dice until we get snake eyes (both dice land on one, which happens $\frac{1}{36}$ of the time). Select the correct range.
-
-
 
 `@possible_answers`
 - 0-10
