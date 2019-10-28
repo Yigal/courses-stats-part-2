@@ -445,31 +445,31 @@ Identify the distribution type from the graph.
 - id: normal
   title: "Normal Distribution"
   items: 
-    - content: "dist1"
+    - content: "![](https://assets.datacamp.com/production/repositories/5515/datasets/3da3b30b07168bac38ad0d4960b4de08a9d34307/dist1.png)"
       id: dist1 # ID of the item. This can be used in the SCTs.
-    - content: "dist2"
-      id: dist1 # ID of the item. This can be used in the SCTs.  
+    - content: "![](https://assets.datacamp.com/production/repositories/5515/datasets/01ea7db47842ea76de62d94daef19f40dda0dbba/dist2.png)"
+      id: dist2 # ID of the item. This can be used in the SCTs.  
       
 - id: geom
   title: "Geometric Distribution"
   items: 
-    - content: "dist3"
+    - content: "![](https://assets.datacamp.com/production/repositories/5515/datasets/6bf780e9d8e646f4370fef46ef0e3d22e8ddd347/dist3.png)"
       id: dist3 # ID of the item. This can be used in the SCTs.
-    - content: "dist4"
+    - content: "![](https://assets.datacamp.com/production/repositories/5515/datasets/7e02414a3eaa40d78056de6c0a2caf0d59c49b0e/dist4.png)"
       id: dist4 # ID of the item. This can be used in the SCTs.        
       
 - id: uniform
   title: "Uniform Distribution"
   items: 
-    - content: "dist5"
+    - content: "![](https://assets.datacamp.com/production/repositories/5515/datasets/59e1adde72ff6a28001e9470f19eedc802719d79/dist5.png)"
       id: dist5 # ID of the item. This can be used in the SCTs.
 
 - id: bernoulli
   title: "Bernoulli Distribution"
   items: 
-    - content: "dist6"
+    - content: "![](https://assets.datacamp.com/production/repositories/5515/datasets/cd6279523e9e6c5309f654b67c4312cb07344a0c/dist6.png)"
       id: dist6 # ID of the item. This can be used in the SCTs.
-    - content: "dist7"
+    - content: "![](https://assets.datacamp.com/production/repositories/5515/datasets/87c983bc804e809674b374764a0f88826cd147f8/dist7.png)"
       id: dist7 # ID of the item. This can be used in the SCTs.      
 ```
 
