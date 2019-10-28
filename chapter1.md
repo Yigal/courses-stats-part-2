@@ -418,3 +418,76 @@ successMessage: "Congratulations" # Message shown when all is correct.
 failureMessage: "Try again!" # Message shown when there are errors (and there is no specific error available).
 isOrdered: false # Should the items in the zones be ordered as in the solution code?
 ```
+
+---
+
+## Distribution from graph
+
+```yaml
+type: DragAndDropExercise
+key: 1036f6a342
+xp: 100
+```
+
+In data science we typically have a large amount of data, and we need to understand what is happening.
+
+`@instructions`
+Identify the distribution type from the graph.
+
+`@hint`
+
+
+`@solution`
+```{python}
+- id: distributions
+  title: "Distributions"
+
+- id: normal
+  title: "Normal Distribution"
+  items: 
+    - content: "dist1"
+      id: dist1 # ID of the item. This can be used in the SCTs.
+    - content: "dist2"
+      id: dist1 # ID of the item. This can be used in the SCTs.  
+      
+- id: geom
+  title: "Geometric Distribution"
+  items: 
+    - content: "dist3"
+      id: dist3 # ID of the item. This can be used in the SCTs.
+    - content: "dist4"
+      id: dist4 # ID of the item. This can be used in the SCTs.        
+      
+- id: uniform
+  title: "Uniform Distribution"
+  items: 
+    - content: "dist5"
+      id: dist5 # ID of the item. This can be used in the SCTs.
+
+- id: bernoulli
+  title: "Bernoulli Distribution"
+  items: 
+    - content: "dist6"
+      id: dist6 # ID of the item. This can be used in the SCTs.
+    - content: "dist7"
+      id: dist7 # ID of the item. This can be used in the SCTs.      
+```
+
+`@sct`
+```{python}
+checks: # Individual checks and custom messages per item. This is optional. Without it, it will check that the options are as in the solution code.
+  - condition: check_target(normal) == cont 
+    incorrectMessage: "The normal distibution comes from summing up random variables, so it is continuous"
+  - condition: check_target(exp) == cont 
+    incorrectMessage: "Exponential distributions are continuous"
+  - condition: check_target(geom) == disc 
+    incorrectMessage: "The geometric distribution is the number of experiments until one is successful. The number of experiments is always an integer"    
+  - condition: check_target(bernoulli) == disc 
+    incorrectMessage: "The Bernoulli distribution is the number of successful experiments. The number of experiments is always an integer"
+  - condition: check_target(poisson) == disc 
+    incorrectMessage: "The Poisson distribution is the number of events during a period. The number of events is always an integer"
+    
+successMessage: "Congratulations" # Message shown when all is correct.
+failureMessage: "Try again!" # Message shown when there are errors (and there is no specific error available).
+isOrdered: false # Should the items in the zones be ordered as in the solution code?
+```
