@@ -447,7 +447,7 @@ Identify the distribution type from the graph.
   items: 
     - content: "![](https://assets.datacamp.com/production/repositories/5515/datasets/3da3b30b07168bac38ad0d4960b4de08a9d34307/dist1.png)"
       id: dist1 # ID of the item. This can be used in the SCTs.
-    - content: "![](https://assets.datacamp.com/production/repositories/5515/datasets/01ea7db47842ea76de62d94daef19f40dda0dbba/dist2.png)"
+    - content: "![](https://assets.datacamp.com/production/repositories/5515/datasets/584b786619561a16974b05d3b938a8e59d375be3/dist2.png)"
       id: dist2 # ID of the item. This can be used in the SCTs.  
       
 - id: geom
@@ -476,16 +476,13 @@ Identify the distribution type from the graph.
 `@sct`
 ```{python}
 checks: # Individual checks and custom messages per item. This is optional. Without it, it will check that the options are as in the solution code.
-  - condition: check_target(normal) == cont 
-    incorrectMessage: "The normal distibution comes from summing up random variables, so it is continuous"
-  - condition: check_target(exp) == cont 
-    incorrectMessage: "Exponential distributions are continuous"
-  - condition: check_target(geom) == disc 
-    incorrectMessage: "The geometric distribution is the number of experiments until one is successful. The number of experiments is always an integer"    
-  - condition: check_target(bernoulli) == disc 
-    incorrectMessage: "The Bernoulli distribution is the number of successful experiments. The number of experiments is always an integer"
-  - condition: check_target(poisson) == disc 
-    incorrectMessage: "The Poisson distribution is the number of events during a period. The number of events is always an integer"
+  - condition: check_target(dist1) == normal 
+  - condition: check_target(dist2) == normal   
+  - condition: check_target(dist3) == geom 
+  - condition: check_target(dist4) == geom
+  - condition: check_target(dist5) == uniform  
+  - condition: check_target(dist6) == bernoulli 
+  - condition: check_target(dist7) == bernoulli
     
 successMessage: "Congratulations" # Message shown when all is correct.
 failureMessage: "Try again!" # Message shown when there are errors (and there is no specific error available).
