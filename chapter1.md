@@ -20,7 +20,7 @@ Which of these distributions has mostly low values with a few high ones?
 
 `@possible_answers`
 - Normal
-- [Exponential]
+- [Geometric]
 - Uniform
 - Bernoulli
 
