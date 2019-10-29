@@ -445,31 +445,31 @@ Identify the distribution type from the graph.
 - id: normal
   title: "Normal Distribution"
   items: 
-    - content: "![](https://assets.datacamp.com/production/repositories/5515/datasets/3da3b30b07168bac38ad0d4960b4de08a9d34307/dist1.png)"
+    - content: "![](https://assets.datacamp.com/production/repositories/5515/datasets/36b1e0fe08988dcedbcd2d2912f35efe2515cd6c/dist1.png)"
       id: dist1 # ID of the item. This can be used in the SCTs.
-    - content: "![](https://assets.datacamp.com/production/repositories/5515/datasets/584b786619561a16974b05d3b938a8e59d375be3/dist2.png)"
+    - content: "![](https://assets.datacamp.com/production/repositories/5515/datasets/e2aee7123011c04b4dee766fa89d1e7c09b0a3ad/dist2.png)"
       id: dist2 # ID of the item. This can be used in the SCTs.  
       
 - id: geom
   title: "Geometric Distribution"
   items: 
-    - content: "![](https://assets.datacamp.com/production/repositories/5515/datasets/6bf780e9d8e646f4370fef46ef0e3d22e8ddd347/dist3.png)"
+    - content: "![](https://assets.datacamp.com/production/repositories/5515/datasets/f9f641f19fd2b0a14f35ea1890d510486f8543c6/dist3.png)"
       id: dist3 # ID of the item. This can be used in the SCTs.
-    - content: "![](https://assets.datacamp.com/production/repositories/5515/datasets/7e02414a3eaa40d78056de6c0a2caf0d59c49b0e/dist4.png)"
+    - content: "![](https://assets.datacamp.com/production/repositories/5515/datasets/c49d51082b2ccf525a3fbd93096ed99931c44112/dist4.png)"
       id: dist4 # ID of the item. This can be used in the SCTs.        
       
 - id: uniform
   title: "Uniform Distribution"
   items: 
-    - content: "![](https://assets.datacamp.com/production/repositories/5515/datasets/59e1adde72ff6a28001e9470f19eedc802719d79/dist5.png)"
+    - content: "![](https://assets.datacamp.com/production/repositories/5515/datasets/276b97aabc4734e725b19c0aa44d36130415111d/dist5.png)"
       id: dist5 # ID of the item. This can be used in the SCTs.
 
 - id: bernoulli
   title: "Bernoulli Distribution"
   items: 
-    - content: "![](https://assets.datacamp.com/production/repositories/5515/datasets/cd6279523e9e6c5309f654b67c4312cb07344a0c/dist6.png)"
+    - content: "![](https://assets.datacamp.com/production/repositories/5515/datasets/5227f737b869bfd5bf15bfdf6444abc09f2690ef/dist6.png)"
       id: dist6 # ID of the item. This can be used in the SCTs.
-    - content: "![](https://assets.datacamp.com/production/repositories/5515/datasets/87c983bc804e809674b374764a0f88826cd147f8/dist7.png)"
+    - content: "![](https://assets.datacamp.com/production/repositories/5515/datasets/065251afba3daba96980c65d4a9b6c89ce17f801/dist7.png)"
       id: dist7 # ID of the item. This can be used in the SCTs.      
 ```
 
