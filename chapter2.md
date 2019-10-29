@@ -29,6 +29,8 @@ length = 50
 
 import random
 
+random.seed(10)
+
 X = []
 Y = []
 Z = []
