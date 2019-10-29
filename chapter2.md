@@ -59,5 +59,5 @@ result = (cov(X,Y), cov(X,Z), cov(Y,Z))
 
 `@sct`
 ```{python}
-# Examples of good success messages: https://instructor-support.datacamp.com/en/articles/2299773-exercise-success-messages.
+Ex().check_object("result").has_equal_value()
 ```
