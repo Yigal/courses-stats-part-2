@@ -11,7 +11,7 @@ key: 48671e7493
 xp: 100
 ```
 
-Typically, a data frame contains multiple variables. It is useful to know 
+Typically, a data frame contains multiple variables. It is useful to know
 
 `@instructions`
 <!-- Guidelines for instructions https://instructor-support.datacamp.com/en/articles/2375526-course-coding-exercises. -->
