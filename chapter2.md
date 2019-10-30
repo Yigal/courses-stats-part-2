@@ -97,7 +97,7 @@ key: 0259ed5b29
 xp: 50
 ```
 
-What happens to the covariance if you multiply each member of the 
+What happens to the covariance if you multiply each member of the
 
 `@hint`
 Remember, $cov(X,Y) = E((X-E(X)) * (Y-E(Y)))$. What happens to the mean when you multiply a series by a constant? What happens to the difference between that mean and any of the values?
