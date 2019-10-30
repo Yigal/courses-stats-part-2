@@ -120,10 +120,14 @@ key: 9d9558b371
 xp: 100
 ```
 
-Covariance measures the relationship between two variables. But that measurement is affected by a lot of other things, such as the [variance](https://en.wikipedia.org/wiki/Variance) of each variable. 
+Covariance measures the relationship between two variables. But that measurement is affected by a lot of other things, such as the [variance](https://en.wikipedia.org/wiki/Variance) of each variable. To 
 
 `@instructions`
-You get three number lists of equal length (`X`, `Y`, and `Z`). Calculate the three covariances, and create a variable `result` which contains the tuple ( $\rho_{X,Y}$ )
+You get three number lists of equal length (`X`, `Y`, and `Z`). Calculate the three covariances, and create a variable `result` which contains a tuple with these values:
+
+1. $\rho_{X,Y}$
+1. $\rho_{X,Z}$
+1. $\rho_{Y,Z}$
 
 `@hint`
 
