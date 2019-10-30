@@ -108,3 +108,42 @@ Remember, $cov(X,Y) = E((X-E(X)) * (Y-E(Y)))$. What happens to the mean when you
 - [The covariance gets bigger (twice as big)]
 
 `@feedback`
+
+
+---
+
+## Correlation
+
+```yaml
+type: NormalExercise
+key: 9d9558b371
+xp: 100
+```
+
+Covariance measures the relationship between two variables. But that measurement is affected by a lot of other things, such as the [variance](https://en.wikipedia.org/wiki/Variance) of each variable. 
+
+`@instructions`
+You get three number lists of equal length (`X`, `Y`, and `Z`). Calculate the three covariances, and create a variable `result` which contains the tuple ( $\rho_{X,Y}$ )
+
+`@hint`
+
+
+`@pre_exercise_code`
+```{python}
+
+```
+
+`@sample_code`
+```{python}
+
+```
+
+`@solution`
+```{python}
+
+```
+
+`@sct`
+```{python}
+# Examples of good success messages: https://instructor-support.datacamp.com/en/articles/2299773-exercise-success-messages.
+```
