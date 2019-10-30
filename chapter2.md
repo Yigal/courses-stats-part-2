@@ -63,3 +63,48 @@ result = (cov(X,Y), cov(X,Z), cov(Y,Z))
 ```{python}
 Ex().check_object("result").has_equal_value()
 ```
+
+---
+
+## Covariance and addition
+
+```yaml
+type: PureMultipleChoiceExercise
+key: 9895ce4388
+xp: 50
+```
+
+What happens to the covariance if you add a five to every members of the first series?
+
+`@hint`
+Remember, $cov(X,Y) = E((X-E(X)) * (Y-E(Y)))$. What happens to the mean when you add a constant to the series? What happens to the difference between that mean and one of the values?
+
+`@possible_answers`
+- The covariance gets smaller
+- [The covariance stays the same]
+- The covariance gets bigger
+
+`@feedback`
+
+
+---
+
+## Covariance and multiplication
+
+```yaml
+type: PureMultipleChoiceExercise
+key: 0259ed5b29
+xp: 50
+```
+
+What happens to the covariance if you multiply each member of the 
+
+`@hint`
+Remember, $cov(X,Y) = E((X-E(X)) * (Y-E(Y)))$. What happens to the mean when you multiply a series by a constant? What happens to the difference between that mean and any of the values?
+
+`@possible_answers`
+- The covariance gets smaller
+- The covariance stays the same
+- [The covariance gets bigger (twice as big)]
+
+`@feedback`
