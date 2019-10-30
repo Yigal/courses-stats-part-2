@@ -120,21 +120,35 @@ key: 9d9558b371
 xp: 100
 ```
 
-Covariance measures the relationship between two variables. But that measurement is affected by a lot of other things, such as the [variance](https://en.wikipedia.org/wiki/Variance) of each variable. To 
+Covariance measures the relationship between two variables. But that measurement is affected by a lot of other things, such as the [variance](https://en.wikipedia.org/wiki/Variance) of each variable. The [Pearson correlation coefficient](https://en.wikipedia.org/wiki/Pearson_correlation_coefficient) lets us ignore the variance. If $a>0$, then when $y=ax$ the correlation coefficient is one. When $y=-ax$, the coefficient is minus one. The formula is:
+
+$\rho\_{X,Y} = \frac{cov(X,Y)}{\sigma\_X \sigma\_Y}$
+
+$\sigma\_X$ is the [standard deviation](https://en.wikipedia.org/wiki/Standard_deviation). It is defined as $\sqrt{E((x-E(X))^2)}$
 
 `@instructions`
-You get three number lists of equal length (`X`, `Y`, and `Z`). Calculate the three covariances, and create a variable `result` which contains a tuple with these values:
-
-1. $\rho_{X,Y}$
-1. $\rho_{X,Z}$
-1. $\rho_{Y,Z}$
+You get three number lists of equal length (`X`, `Y`, and `Z`). Calculate the three covariances, and create a variable `result` which contains a tuple: ( $\rho\_{X,Y}$, $\rho\_{X,Z}$, $\rho\_{Y,Z}$ )
 
 `@hint`
 
 
 `@pre_exercise_code`
 ```{python}
+length = 50
 
+import random
+
+random.seed(10)
+
+X = []
+Y = []
+Z = []
+
+for i in range(length):
+  X.append(random.random()* 10)
+  Y.append(X[i] + random.random())
+  Z.append(random.random() * 20)
+  
 ```
 
 `@sample_code`
@@ -144,7 +158,17 @@ You get three number lists of equal length (`X`, `Y`, and `Z`). Calculate the th
 
 `@solution`
 ```{python}
+import statistics
 
+def cov(X,Y):
+  E_X = statistics.mean(X)
+  E_Y = statistics.mean(Y)
+  return statistics.mean(map(lambda x,y: (x-E_X)*(y-E_Y), X, Y))
+
+def stdDev(X):
+  E_X = sta
+
+result = (cov(X,Y), cov(X,Z), cov(Y,Z))
 ```
 
 `@sct`
