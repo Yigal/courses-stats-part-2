@@ -153,12 +153,13 @@ for i in range(length):
 
 `@sample_code`
 ```{python}
-
+Ex().check_object("result").has_equal_value()
 ```
 
 `@solution`
 ```{python}
 import statistics
+import math
 
 def cov(X,Y):
   E_X = statistics.mean(X)
@@ -166,9 +167,13 @@ def cov(X,Y):
   return statistics.mean(map(lambda x,y: (x-E_X)*(y-E_Y), X, Y))
 
 def stdDev(X):
-  E_X = sta
+  E_X = statistics.mean(X)
+  return math.sqrt(statistics.mean(map(lambda x: (x-E_X)**2, X)))
 
-result = (cov(X,Y), cov(X,Z), cov(Y,Z))
+def rho(X,Y):
+  return cov(X,Y)/(stdDev(X)*stdDev(Y))
+
+result = (rho(X,Y), rho(X,Z), rho(Y,Z))
 ```
 
 `@sct`
