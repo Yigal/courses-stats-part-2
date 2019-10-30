@@ -182,3 +182,57 @@ result = (rho(X,Y), rho(X,Z), rho(Y,Z))
 ```{python}
 # Examples of good success messages: https://instructor-support.datacamp.com/en/articles/2299773-exercise-success-messages.
 ```
+
+---
+
+## Correlation with a non linear relationship
+
+```yaml
+type: MultipleChoiceExercise
+key: 5ab1b266d6
+xp: 50
+```
+
+Can you use the correlation coefficient to check for non linear relationships? 
+
+Use the function `rho(X,Y)` to get the correlation coefficient between two series. 
+
+`@possible_answers`
+- Yes
+- [No]
+
+`@hint`
+What is the correlation coefficient between $x$ and $x^2$ when the range is $(-a,a)$? 
+
+Does it mean there is no relationship between $x$ and $x^2$?
+
+`@pre_exercise_code`
+```{python}
+import statistics
+import math
+
+def cov(X,Y):
+  E_X = statistics.mean(X)
+  E_Y = statistics.mean(Y)
+  return statistics.mean(map(lambda x,y: (x-E_X)*(y-E_Y), X, Y))
+
+def stdDev(X):
+  E_X = statistics.mean(X)
+  return math.sqrt(statistics.mean(map(lambda x: (x-E_X)**2, X)))
+
+def rho(X,Y):
+  return cov(X,Y)/(stdDev(X)*stdDev(Y))
+
+
+"""
+X = list(range(-20,20))
+Y = list(map(lambda x:x**2, X))
+
+print (rho(X,Y))
+"""
+```
+
+`@sct`
+```{python}
+
+```
