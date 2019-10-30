@@ -112,7 +112,7 @@ Remember, $cov(X,Y) = E((X-E(X)) * (Y-E(Y)))$. What happens to the mean when you
 
 ---
 
-## Correlation
+## Correlation coefficient
 
 ```yaml
 type: NormalExercise
