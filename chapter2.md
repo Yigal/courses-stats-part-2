@@ -198,8 +198,8 @@ Can you use the correlation coefficient to check for non linear relationships?
 Use the function `rho(X,Y)` to get the correlation coefficient between two series. 
 
 `@possible_answers`
-- Yes
-- [No]
+- Yes, you can still use the correlation coefficient
+- [No, the correlation coefficient is only useful for relationships that behave similar to linear ones]
 
 `@hint`
 What is the correlation coefficient between $x$ and $x^2$ when the range is $(-a,a)$? 
