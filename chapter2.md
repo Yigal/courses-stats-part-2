@@ -195,7 +195,7 @@ xp: 50
 
 Can you use the correlation coefficient to check for non linear relationships? 
 
-Use the function `rho(X,Y)` to get the correlation coefficient between two series. 
+Use the function `rho(X,Y)` to get the correlation coefficient between two series.
 
 `@possible_answers`
 - Yes, you can still use the correlation coefficient
