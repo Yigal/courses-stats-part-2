@@ -244,3 +244,48 @@ print (rho(X,Y))
 ```{python}
 
 ```
+
+---
+
+## Correlation and causation
+
+```yaml
+type: PureMultipleChoiceExercise
+key: 2426449fc6
+xp: 50
+```
+
+What do you think is the correlation between amount of medicine taken each day and the chance of dying from a disease?
+
+`@hint`
+
+
+`@possible_answers`
+- [Positive, people who take a lot of medicine are more likely to die of disease]
+- Negative, medicine saves lives
+
+`@feedback`
+
+
+---
+
+## Correlation and causation 2
+
+```yaml
+type: PureMultipleChoiceExercise
+key: 940e1f5024
+xp: 50
+```
+
+Does this correlation between medicine and dying mean that medicine is actually harmful?
+
+`@hint`
+
+
+`@possible_answers`
+- Yes, if the correlation is positive it means medicine causes people to die
+- No, that result is accidental
+- No. **Correlation does not equate causation**. In this case, there is no causal relationship.
+- [No, because both variables are caused by a third variable, how sick a person is. Sicker people get more medicine and are more likely to die,]
+
+`@feedback`
