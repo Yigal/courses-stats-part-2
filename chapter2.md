@@ -131,16 +131,16 @@ The formula is:
 
 $\rho\_{X,Y} = \frac{cov(X,Y)}{\sigma\_X \sigma\_Y}$
 
-$\sigma\_X$ is the [standard deviation of $X$](https://en.wikipedia.org/wiki/Standard_deviation). It is defined as $\sqrt{E((x-E(X))^2)}$, where $E(X)$ is the mean of $X$. In other words,
-
-$\sigma\_X = \sqrt{E((x-E(X))^2)} = \sqrt{\frac{1}{N}\sum\_{1}^{N}(x\_n-E(x))^2} = $
-$\sqrt{\frac{1}{N}\sum\_{1}^{N}(x\_n-\frac{1}{N}\sum\_{1}^{N}x\_n)^2} = \sqrt{cov(X,X)}$
+$\sigma\_X$ is the [standard deviation of $X$](https://en.wikipedia.org/wiki/Standard_deviation). It is defined as $\sqrt{E((x-E(X))^2)}$, where $E(X)$ is the mean of $X$. 
 
 `@instructions`
 You get three number lists of equal length (`X`, `Y`, and `Z`). Calculate the three correlation coefficients, and create a variable `result` which contains a tuple: ( $\rho\_{X,Y}$, $\rho\_{X,Z}$, $\rho\_{Y,Z}$ )
 
 `@hint`
+$\sigma\_X$ is the [standard deviation of $X$](https://en.wikipedia.org/wiki/Standard_deviation). It is defined as $\sqrt{E((x-E(X))^2)}$, where $E(X)$ is the mean of $X$. In other words,
 
+$\sigma\_X = \sqrt{E((x-E(X))^2)} = \sqrt{\frac{1}{N}\sum\_{1}^{N}(x\_n-E(x))^2} = $
+$\sqrt{\frac{1}{N}\sum\_{1}^{N}(x\_n-\frac{1}{N}\sum\_{1}^{N}x\_n)^2} = \sqrt{cov(X,X)}$
 
 `@pre_exercise_code`
 ```{python}
