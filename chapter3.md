@@ -149,7 +149,44 @@ The null hypothesis is that the coin is fair, and lands on head half the time. T
 `@possible_answers`
 - 1
 - 3
+- 4 
 - [5]
+- 6
+- 7
+
+`@feedback`
+
+
+---
+
+## Statistical significance #2
+
+```yaml
+type: PureMultipleChoiceExercise
+key: a3691bf123
+xp: 50
+```
+
+Let's get another coin. We suspect it is weighed to land on one side each time, but we're not sure which side. How many more times does it need to land on the same side for us to conclude that the coin is weighed so it can only land on that side with a significance level of 5%?
+
+`@hint`
+The null hypothesis is that the coin is fair, and lands on head half the time. Therefore, the chance of it landing repeatedly on the same side is:
+
+| Tosses | Chance all heads under null hypothesis | Chance all tails under null hypothesis |
+|---|---|---|
+| 1 | 0.5 | 0.5 |
+| 2 | 0.25 | 0.25 |
+| 3 | 0.125 | 0.125 |
+| 4 | 0.0625 | 0.0625 |
+| 5 | 0.03125 | 0.03125 |
+| 6 | 0.015625 | 0.015625 |
+
+`@possible_answers`
+- 1
+- 3
+- 4
+- 5
+- [6]
 - 7
 
 `@feedback`
