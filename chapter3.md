@@ -74,3 +74,25 @@ successMessage: "Congratulations" # Message shown when all is correct.
 failureMessage: "Try again!" # Message shown when there are errors (and there is no specific error available).
 isOrdered: false # Should the items in the zones be ordered as in the solution code?
 ```
+
+---
+
+## Is there an effect?
+
+```yaml
+type: PureMultipleChoiceExercise
+key: f5acaf39b1
+xp: 50
+```
+
+Before throwing a pair of dice a gambler prays to [Fortuna](https://en.wikipedia.org/wiki/Fortuna), the Roman goddess of luck. The dice both show six. Based on this information, is Fortuna real?
+
+`@hint`
+
+
+`@possible_answers`
+- Yes, it wouldn't have happened otherwise
+- [There is no way to know, because this result could have happened by chance ($\frac{1}{36}$)]
+- No, that is silly
+
+`@feedback`
