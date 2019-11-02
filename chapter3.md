@@ -135,7 +135,6 @@ As the previous two questions demonstrated, whether we reject the null hypothesi
 
 For example, imagine that we have a coin. We'll call one side of it "head" and the other "tail". The first we tossed it, it landed on head. How many more times does it need to land on head for us to conclude that the coin is weighed so it can only land on head with a significance level of 5%?
 
-
 `@hint`
 The null hypothesis is that the coin is fair, and lands on head half the time. Therefore, the chance of it landing repeatedly on head is:
 
