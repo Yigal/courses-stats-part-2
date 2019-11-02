@@ -123,7 +123,7 @@ Gabi (the other gambler) throws the same dice five times, and gets six each time
 
 ---
 
-## Statistical significance
+## Statistical significance #1
 
 ```yaml
 type: PureMultipleChoiceExercise
