@@ -37,14 +37,18 @@ For each statement, classify whether it is a null hypothesis, an alternative hyp
   items: 
     - content: "After watching a ten minute commercial for candy, the ratio of people who prefer cheese to bread will be unchanged"
       id: commercialNull
-      
+    - content: "Patient A is not having a heart attack"
+      id: Aneg
+
 - id: alternative
   title: "Alternative Hypothesis"
   items: 
     - content: "After watching a ten minute commercial for candy, more people will prefer cheese to bread than in a control group that didn't watch the commercial"
       id: commercialCheese
     - content: "After watching a ten minute commercial for candy, more people will prefer bread to cheese than in a control group that didn't watch the commercial"
-      id: commercialBread      
+      id: commercialBread
+    - content: "Patient A is having a heart attack"
+      id: Apos
 
 - id: notHypothesis
   title: "Not a Hypothesis"
@@ -63,7 +67,11 @@ checks: # Individual checks and custom messages per item. This is optional. With
   - condition: check_target(commercialBread) == alternative
     incorrectMessage: 'The hypothesis here is that a treatment (commercial for candy) will change preferences, that is an alternative hypothesis'    
   - condition: check_target(commercialNull) == nullHyp
-    incorrectMessage: 'The hypothesis here is that a treatment (commercial for candy) will not affect preferences, that is a null hypothesis'        
+    incorrectMessage: 'The hypothesis here is that a treatment (commercial for candy) will not affect preferences, that is a null hypothesis'
+  - condition: check_target(aNeg) == nullHyp
+    incorrectMessage: 'The phenomena is that the patient is having a heart attack, the null hypothesis is that the patient does not have one'
+  - condition: check_target(aPos) == alternative
+    incorrectMessage: 'The phenomena is that the patient is having a heart attack, the alternative hypothesis is that the patient does have one'    
 successMessage: "Congratulations" # Message shown when all is correct.
 failureMessage: "Try again!" # Message shown when there are errors (and there is no specific error available).
 isOrdered: false # Should the items in the zones be ordered as in the solution code?
