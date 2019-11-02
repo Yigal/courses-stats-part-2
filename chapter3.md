@@ -15,7 +15,7 @@ One of the main uses of statistics is to test if a hypothesis, a testable theory
 
 In most cases, we want to check if a treatment of some kind changes a measurable outcome. To do that, we create two populations: the treated population and the control group. We treat the first group but not the second, and then check between two possibilities:
 
-* The [null hypothesis](https://en.wikipedia.org/wiki/Null_hypothesis) is that the treatment didn't affect the measured variable, or that a phenomena hasn't happened. This is the default position, which we accept unless the chance of it being true is very small (usually less than 0.05, but for medical experiments typically 0.01).
+* The [null hypothesis](https://en.wikipedia.org/wiki/Null_hypothesis) is that the treatment didn't affect the measured variable, or that a phenomena hasn't happened. This is the default position, which we accept unless the chance of it being true is very small.
 
 * The [alternative hypothesis](https://en.wikipedia.org/wiki/Alternative_hypothesis), which is that the treatment did have an effect, or that a certain phenomena has happened.
 
@@ -108,14 +108,14 @@ key: a94fd7d931
 xp: 50
 ```
 
-Gabi the gambler throws the same dice six times, and gets six on all of them. Gary accuses her of cheating. What do you think?
+Gabi (the other gambler) throws the same dice five times, and gets six on all of them. Gary accuses her of cheating. What do you think?
 
 `@hint`
 
 
 `@possible_answers`
 - Yes, the result she got is impossible without cheating
-- [Yes, the result she got is possible but very unlikely ${(\frac{1}{6})^6} \approx 0.00002$]
+- [Yes, the result she got is possible but very unlikely ${(\frac{1}{6})^5} \approx 0.00012$]
 - No, it could have happened randomly, there is no reason to think the dice is not balanced
 
 `@feedback`
