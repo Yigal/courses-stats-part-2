@@ -93,6 +93,6 @@ Before throwing a pair of dice a gambler prays to [Fortuna](https://en.wikipedia
 `@possible_answers`
 - Yes, it wouldn't have happened otherwise
 - [There is no way to know, because this result could have happened by chance ($\frac{1}{36}$)]
-- No, that is silly
+- No, Roman goddesses don't exist. That is a silly question
 
 `@feedback`
