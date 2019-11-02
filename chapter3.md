@@ -108,7 +108,7 @@ key: a94fd7d931
 xp: 50
 ```
 
-Gabi (the other gambler) throws the same dice five times, and gets six on all of them. Gary accuses her of cheating. What do you think?
+Gabi (the other gambler) throws the same dice five times, and gets six each time. Gary accuses her of cheating. What do you think?
 
 `@hint`
 
@@ -116,6 +116,41 @@ Gabi (the other gambler) throws the same dice five times, and gets six on all of
 `@possible_answers`
 - Yes, the result she got is impossible without cheating
 - [Yes, the result she got is possible but very unlikely ${(\frac{1}{6})^5} \approx 0.00012$]
-- No, it could have happened randomly, there is no reason to think the dice is not balanced
+- No, it could have happened randomly, so there is no reason to think the dice is not balanced
+
+`@feedback`
+
+
+---
+
+## Statistical significance
+
+```yaml
+type: PureMultipleChoiceExercise
+key: 616cad7432
+xp: 50
+```
+
+As the previous two questions demonstrated, whether we reject the null hypothesis (it's all just chance) or not depends on how likely the result is to have happened randomly. If the chance of the result happening randomly is smaller than our chosen [significance level](https://en.wikipedia.org/wiki/Statistical_significance), we assume that the null hypothesis is incorrect and therefore accept the alternative hypothesis. In most fields, a significance level of 5% is considered sufficient. 
+
+For example, imagine that we have a coin. We'll call one side of it "head" and the other "tail". The first we tossed it, it landed on head. How many more times does it need to land on head for us to conclude that the coin is weighed so it can only land on head with a significance level of 5%?
+
+
+`@hint`
+The null hypothesis is that the coin is fair, and lands on head half the time. Therefore, the chance of it landing repeatedly on head is:
+
+| Tosses | Chance all heads under null hypothesis |
+|---|---|
+| 1 | 0.5 |
+| 2 | 0.25 |
+| 3 | 0.125 |
+| 4 | 0.0625 |
+| 5 | 0.03125 |
+
+`@possible_answers`
+- 1
+- 3
+- [5]
+- 7
 
 `@feedback`
