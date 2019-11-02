@@ -77,7 +77,7 @@ isOrdered: false # Should the items in the zones be ordered as in the solution c
 
 ---
 
-## Is there an effect?
+## Identifying effects #1
 
 ```yaml
 type: PureMultipleChoiceExercise
@@ -85,14 +85,37 @@ key: f5acaf39b1
 xp: 50
 ```
 
-Before throwing a pair of dice a gambler prays to [Fortuna](https://en.wikipedia.org/wiki/Fortuna), the Roman goddess of luck. The dice both show six. Based **only** on this information, is Fortuna real?
+Before throwing dice Gary the Gambler prays to [Fortuna](https://en.wikipedia.org/wiki/Fortuna), the Roman goddess of luck, for a high result. He gets a six. Based **only** on this information, is Fortuna real?
 
 `@hint`
 
 
 `@possible_answers`
 - Yes, it wouldn't have happened otherwise
-- [There is no way to know, because this result could have happened by chance ($\frac{1}{36}$)]
+- [Maybe, but this result could have happened by chance ($\frac{1}{6} \approx 0.1667$). So we don't reject the null hypothesis that it was pure luck]
 - No, Roman goddesses don't exist. That is a silly question
+
+`@feedback`
+
+
+---
+
+## Identifying effects #2
+
+```yaml
+type: PureMultipleChoiceExercise
+key: a94fd7d931
+xp: 50
+```
+
+Gabi the gambler throws the same dice six times, and gets six on all of them. Gary accuses her of cheating. What do you think?
+
+`@hint`
+
+
+`@possible_answers`
+- Yes, the result she got is impossible without cheating
+- [Yes, the result she got is possible but very unlikely ${(\frac{1}{6})^6} \approx 0.00002$]
+- No, it could have happened randomly, there is no reason to think the dice is not balanced
 
 `@feedback`
