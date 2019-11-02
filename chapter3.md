@@ -15,9 +15,9 @@ One of the main uses of statistics is to test if a hypothesis, a testable theory
 
 In most cases, we want to check if a treatment of some kind changes a measurable outcome. To do that, we create two populations: the treated population and the control group. We treat the first group but not the second, and then check between two possibilities:
 
-* The [null hypothesis](https://en.wikipedia.org/wiki/Null_hypothesis) is that the treatment didn't affect the measured variable. This is the default position, which we accept unless the chance of it being true is very small (usually less than 0.05, but for medical experiments typically 0.01).
+* The [null hypothesis](https://en.wikipedia.org/wiki/Null_hypothesis) is that the treatment didn't affect the measured variable, or that a phenomena hasn't happened. This is the default position, which we accept unless the chance of it being true is very small (usually less than 0.05, but for medical experiments typically 0.01).
 
-* The [alternative hypothesis](https://en.wikipedia.org/wiki/Alternative_hypothesis), which is that the treatment does have an effect. 
+* The [alternative hypothesis](https://en.wikipedia.org/wiki/Alternative_hypothesis), which is that the treatment did have an effect, or that a certain phenomena has happened.
 
 
 
