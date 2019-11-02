@@ -17,7 +17,7 @@ In most cases, we want to check if a treatment of some kind changes a measurable
 
 * The [null hypothesis](https://en.wikipedia.org/wiki/Null_hypothesis) is that the treatment didn't affect the measured variable. This is the default position, which we accept unless the chance of it being true is very small (usually less than 0.05, but for medical experiments typically 0.01).
 
-* The alternative hypothesis, which is that the treatment does have an effect
+* The [alternative hypothesis](https://en.wikipedia.org/wiki/Alternative_hypothesis), which is that the treatment does have an effect. 
 
 
 
