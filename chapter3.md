@@ -85,7 +85,7 @@ key: f5acaf39b1
 xp: 50
 ```
 
-Before throwing a pair of dice a gambler prays to [Fortuna](https://en.wikipedia.org/wiki/Fortuna), the Roman goddess of luck. The dice both show six. Based on this information, is Fortuna real?
+Before throwing a pair of dice a gambler prays to [Fortuna](https://en.wikipedia.org/wiki/Fortuna), the Roman goddess of luck. The dice both show six. Based **only** on this information, is Fortuna real?
 
 `@hint`
 
