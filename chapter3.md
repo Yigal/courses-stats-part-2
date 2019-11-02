@@ -19,8 +19,6 @@ In most cases, we want to check if a treatment of some kind changes a measurable
 
 * The [alternative hypothesis](https://en.wikipedia.org/wiki/Alternative_hypothesis), which is that the treatment did have an effect, or that a certain phenomena has happened.
 
-
-
 `@instructions`
 For each statement, classify whether it is a null hypothesis, an alternative hypothesis, or not a hypothesis at all.
 
