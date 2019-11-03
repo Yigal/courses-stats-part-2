@@ -285,7 +285,9 @@ key: 29bd33f6fa
 xp: 50
 ```
 
-It is extremely common for the results of an experiment to be averaged together to form a mean value. If the experiment is repeated [these mean values tend to be distributed in a normal distribution](https://en.wikipedia.org/wiki/Central_limit_theorem). For example, lets say we want to show that a certain medicine increases the blood iron 
+It is extremely common for the results of an experiment to be averaged together to form a mean value. If the experiment is repeated [these mean values tend to be distributed in a normal distribution](https://en.wikipedia.org/wiki/Central_limit_theorem).
+
+For example, let's take [the birth weight of babies in the UK](https://www.healthknowledge.org.uk/public-health-textbook/research-methods/1b-statistical-methods/statistical-distributions). It is a normal distribution with a mean of 3.39 kg and a standard distribution of 0.55 kg. 
 
 
 
