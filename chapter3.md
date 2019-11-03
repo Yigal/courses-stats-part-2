@@ -263,10 +263,7 @@ Note: Select the correct range
 
 - Therefore, the chance we'll reject the null hypothesis erroneously is $1-(1-p)^n$. This is the significance level.
 
-- $1-(1-p)^n = 0.05$
-- $(1-p)^n = 0.95$
-- $1-p = 0.95^(1/n)$
-- $1-0.95^(1/n) = p$
+- From $1-(1-p)^{100} = 0.05$ you can get the value of $p$.
 
 `@possible_answers`
 -    0.01 - 0.001
