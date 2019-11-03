@@ -190,3 +190,54 @@ The null hypothesis is that the coin is fair, and lands on head half the time. T
 - 7
 
 `@feedback`
+
+
+---
+
+## Danger with statistical significance
+
+```yaml
+type: MultipleChoiceExercise
+key: 2a8c170496
+xp: 50
+```
+
+Now we have a test for a weighed coin: toss the coin six times, and see if it lands on the same side on all six times. It works with a significance level of 0.05, because the chance of it happening randomly under the null hypothesis is $(1/2)^5 = 0.03125$.
+
+If we had a hundred fair coins and used this test, how many false positives will we have? How many fair coins will we identify as weighed on the average? By the way, this type of mistake, rejecting the null hypothesis when it is correct, is also called a [Type I error](https://en.wikipedia.org/wiki/Type_I_and_type_II_errors). 
+
+Note: select the correct range
+
+`@possible_answers`
+- <1
+- 1-2
+- 2-3
+- [3-4]
+- 4-5
+- 5-6
+
+`@hint`
+The answer is the expected value of the [Bernoulli distribution](https://en.wikipedia.org/wiki/Bernoulli_distribution) times the number of experiments. Alternatively, you can use Python to calculate the answer.
+
+`@pre_exercise_code`
+```{python}
+"""
+import math
+
+p = pow(0.5,5)
+n = 100
+k = range(n+1)   # Number of successes is anything from zero to n.
+prob = [pow(p,k)*pow(1-p,n-k) for k in k]
+binom = [math.factorial(n)/(math.factorial(k)*math.factorial(n-k)) for k in k]
+expected = 0
+for k in k:
+	expected += k*prob[k]*binom[k]
+    
+print(expected)
+"""
+```
+
+`@sct`
+```{python}
+# Check https://instructor-support.datacamp.com/en/articles/2375523-course-multiple-choice-with-console-exercises on how to write feedback messages for this exercise.
+```
