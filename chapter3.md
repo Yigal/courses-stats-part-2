@@ -274,3 +274,35 @@ Note: Select the correct range
 
 `@feedback`
 - If the probability of a type I error for a specific coin (the coin is considered weighed while it is fair) is $p$, the probability of correctly surmising the coin is fair is $1-p$. To accept the null hypothesis, we need it to be correct for all coins. The likelihood of that is $(1-p)^n$ where $n$ is the number of coins. Therefore, the chance we'll reject the null hypothesis erroneously is $1-(1-p)^n$. This is the significance level. $1-(1-p)^n = 0.05 \implies (1-p)^n = 0.95 \implies 1-p = 0.95^\frac{1}{n} \implies p = 1-0.95^\frac{1}{n} \implies p \approx 5.128 * 10^{-4}$
+
+---
+
+## Normal distributions and z-tests
+
+```yaml
+type: MultipleChoiceExercise
+key: 29bd33f6fa
+xp: 50
+```
+
+It is extremely common for the results of an experiment to be averaged together to form a mean value. If the experiment is repeated, [these mean values tend to be distributed in a normal distribution](https://en.wikipedia.org/wiki/Central_limit_theorem). 
+
+
+
+`@possible_answers`
+- [Correct answer 1]
+- Wrong answer 2
+- Wrong answer 3
+
+`@hint`
+
+
+`@pre_exercise_code`
+```{python}
+
+```
+
+`@sct`
+```{python}
+
+```
