@@ -241,3 +241,25 @@ print(expected)
 ```{python}
 # Check https://instructor-support.datacamp.com/en/articles/2375523-course-multiple-choice-with-console-exercises on how to write feedback messages for this exercise.
 ```
+
+---
+
+## What went wrong?
+
+```yaml
+type: PureMultipleChoiceExercise
+key: 85051b2cb8
+xp: 50
+```
+
+As you've seen, statistical significance can be tricky. The statistical significance has to be compared with the null hypothesis for the entire experiment, not applied to each part separately. The correct null hypothesis, in this case, is **none of the coins are weighed**. To have 0.05 significance level for this hypothesis, what is the confidence level we need that each individual coin is not weighed?
+
+`@hint`
+
+
+`@possible_answers`
+- [None of the coins are weighed, they are all fair]
+- Three of the coins are weighed, the rest are fair
+- All the coins are weighed, none of them are fair
+
+`@feedback`
