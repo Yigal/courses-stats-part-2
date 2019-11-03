@@ -252,14 +252,28 @@ key: 85051b2cb8
 xp: 50
 ```
 
-As you've seen, statistical significance can be tricky. The statistical significance has to be compared with the null hypothesis for the entire experiment, not applied to each part separately. The correct null hypothesis, in this case, is **none of the coins are weighed**. To have 0.05 significance level for this hypothesis, what is the confidence level we need that each individual coin is not weighed?
+As you've seen, statistical significance can be tricky. The statistical significance has to be compared with the null hypothesis for the entire experiment, not applied to each part separately. The correct null hypothesis, in this case, is **none of the coins are weighed**. To reject this hypothesis, we need to be more than 95% sure that a specific coin is weighed. What probability do we need for each coin to reach an overall significance level of 0.05?
+
+Note: Select the correct range
 
 `@hint`
+- If the probability of a type I error for a specific coin (the coin is considered weighed while it is fair) is $p$, the probability of correctly surmising the coin is fair is $1-p$.
 
+- To accept the null hypothesis, we need it to be correct for all coins. The likelihood of that is $(1-p)^n$ where $n$ is the number of coins.
+
+- Therefore, the chance we'll reject the null hypothesis erroneously is $1-(1-p)^n$. This is the significance level.
+
+- $1-(1-p)^n = 0.05$
+- $(1-p)^n = 0.95$
+- $1-p = 0.95^(1/n)$
+- $1-0.95^(1/n) = p$
 
 `@possible_answers`
-- [None of the coins are weighed, they are all fair]
-- Three of the coins are weighed, the rest are fair
-- All the coins are weighed, none of them are fair
+-    0.01 - 0.001
+- [ 0.001 - 0.0001]
+-  0.0001 - 0.00001
+- 0.00001 - 0.000001
+- <         0.000001
 
 `@feedback`
+- If the probability of a type I error for a specific coin (the coin is considered weighed while it is fair) is $p$, the probability of correctly surmising the coin is fair is $1-p$. To accept the null hypothesis, we need it to be correct for all coins. The likelihood of that is $(1-p)^n$ where $n$ is the number of coins. Therefore, the chance we'll reject the null hypothesis erroneously is $1-(1-p)^n$. This is the significance level. $1-(1-p)^n = 0.05 \implies (1-p)^n = 0.95 \implies 1-p = 0.95^\frac{1}{n} \implies p = 1-0.95^\frac{1}{n} \implies p \approx 0.0005128$
