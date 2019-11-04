@@ -346,7 +346,7 @@ xp: 50
 
 This is the same scenario as the previous question. [Caucasian birth weight at a certain hospital had a mean of 3369 grams and a standard deviation of 567 grams](https://academic.oup.com/aje/article-abstract/141/12/1177/148415?redirectedFrom=fulltext). Imagine there's a new illegal drug, methacaine. We want to know if when women take methcaine in pregnancy it causes lower birth weight. 
 
-In the last year a hundred Caucasian women gave birth while addicted to methacaine in that hospital. The mean birth weight for them was 2965 grams. With a statistical significance of 5%, can we say that methacaine causes low birth weight?
+In the last year a hundred Caucasian women gave birth while addicted to methacaine in that hospital. The mean birth weight for them was 2965 grams. With a statistical significance of 5%, can we say that methacaine causes lower birth weight?
 
 `@hint`
 - Under the null hypothesis we'd expect the mean of a sample of a hundred births to be the same as the population mean (3369 gr.), normally distributed at a standard deviation of $\sigma\_{mean} = \frac{\sigma\_{single}}{\sqrt{n}} = 56.7 gr$
