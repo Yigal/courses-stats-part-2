@@ -304,3 +304,33 @@ Note: Select the correct range.
 - 0.08 - 0.16
 
 `@feedback`
+
+
+---
+
+## Z-tests
+
+```yaml
+type: PureMultipleChoiceExercise
+key: 5718b14ea7
+xp: 50
+```
+
+When a variable is created by calculating the mean of a large number of values it tends to follow a [normal distribution](https://en.wikipedia.org/wiki/Central_limit_theorem). This lets us use the z-score to test for statistical significance.
+
+For example, [Caucasian birth weight at a certain hospital had a mean of 3369 grams and a standard deviation of 567 grams](https://academic.oup.com/aje/article-abstract/141/12/1177/148415?redirectedFrom=fulltext). Imagine there's a new illegal drug, Methacaine. 
+We want to know if when women take Methcaine in pregnancy it causes lower birth weight.
+
+`@hint`
+
+
+`@possible_answers`
+- [Correct answer 1]
+- Wrong answer 2
+- Wrong answer 3
+
+`@feedback`
+<!-- Examples of good feedback messages: https://instructor-support.datacamp.com/en/articles/2299773-exercise-success-messages.  -->
+- Perfect!
+- Error message answer 2
+- Error message answer 3
