@@ -291,7 +291,6 @@ The z-score also tells us how likely a result is. Except for the mean and standa
 
 Note: Select the correct range.
 
-
 `@hint`
 - Enter the z-score
 - The p value you get is the probability that a value will have that z-score or higher.
