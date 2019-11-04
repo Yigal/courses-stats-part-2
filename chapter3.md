@@ -344,8 +344,7 @@ key: 5718b14ea7
 xp: 50
 ```
 
-[Caucasian birth weight at a certain hospital had a mean of 3369 grams and a standard deviation of 567 grams](https://academic.oup.com/aje/article-abstract/141/12/1177/148415?redirectedFrom=fulltext). Imagine there's a new illegal drug, methacaine. 
-We want to know if when women take methcaine in pregnancy it causes lower birth weight. 
+This is the same scenario as the previous question. [Caucasian birth weight at a certain hospital had a mean of 3369 grams and a standard deviation of 567 grams](https://academic.oup.com/aje/article-abstract/141/12/1177/148415?redirectedFrom=fulltext). Imagine there's a new illegal drug, methacaine. We want to know if when women take methcaine in pregnancy it causes lower birth weight. 
 
 In the last year a hundred Caucasian women gave birth while addicted to methacaine in that hospital. The mean birth weight for them was 2965 grams. With a statistical significance of 5%, can we say that methachaine causes low birth weight?
 
