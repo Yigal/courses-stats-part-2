@@ -277,68 +277,30 @@ Note: Select the correct range
 
 ---
 
-## Hypothesis testing and z-tests
+## Z-scores
 
 ```yaml
-type: MultipleChoiceExercise
-key: 9458bac450
+type: PureMultipleChoiceExercise
+key: edf2016b74
 xp: 50
 ```
 
-It is extremely common for the results of an experiment to be averaged together to form a mean value. If the experiment is repeated [these mean values tend to be distributed in a normal distribution](https://en.wikipedia.org/wiki/Central_limit_theorem).
+A lot of variables behave according to the [normal distribution](https://en.wikipedia.org/wiki/Normal_distribution). When dealing with those variables, it is often useful to use the [z-score](https://en.wikipedia.org/wiki/Standard_score). The z-score is the number of standard deviations a value is from the mean. For example, if the mean is 100 and the standard deviation is 10, then 120's z-score is 2. The z-score for 95 is -0.5. 
 
-For example, we know that a certain 
+The z-score also tells us how likely a result is. Except for the mean and standard deviation, all standard distributions are identical - and the z-score let us ignore those variables. Use a [calculator, such as this one](https://www.socscistatistics.com/pvalues/normaldistribution.aspx) to calculate the likelihood that a normally distributed value will have a z-score of 2 or more.
 
-`@possible_answers`
-- [Correct answer 1]
-- Wrong answer 2
-- Wrong answer 3
+Note: Select the correct range.
+
 
 `@hint`
-<!-- Examples of good hints: https://instructor-support.datacamp.com/en/articles/2379164-hints-best-practices. -->
-- This is an example hint.
-- This is an example hint.
-
-`@pre_exercise_code`
-```{python}
-
-```
-
-`@sct`
-```{python}
-# Check https://instructor-support.datacamp.com/en/articles/2375523-course-multiple-choice-with-console-exercises on how to write feedback messages for this exercise.
-```
-
----
-
-## Design a z-test experiment
-
-```yaml
-type: MultipleChoiceExercise
-key: 29bd33f6fa
-xp: 50
-```
-
-
-
-For example, take [the birth weight of babies in the UK](https://www.healthknowledge.org.uk/public-health-textbook/research-methods/1b-statistical-methods/statistical-distributions). It is a normal distribution with a mean of 3.39 kg and a standard distribution of 0.55 kg. Let's assume there is a new drug on the street, Methcaine. We want to show that Methcaine causes low birth weight.
-
-The $H\_0$ (null hypothesis) is that Methcaine does not cause low birth weight. $H\_a$, the alternative hypothesis, is that it does. 
+- Enter the z-score
+- The p value you get is the probability that a value will have that z-score or higher.
 
 `@possible_answers`
-- [Correct answer 1]
-- Wrong answer 2
-- Wrong answer 3
+- 0 - 0.01
+- 0.01 - 0.02
+- [0.02 - 0.04]
+- 0.04 - 0.08
+- 0.08 - 0.16
 
-`@hint`
-
-
-`@pre_exercise_code`
-```{python}
-
-```
-
-`@sct`
-```{python}
-
-```
+`@feedback`
