@@ -307,6 +307,35 @@ Note: Select the correct range.
 
 ---
 
+## Standard deviation of mean value
+
+```yaml
+type: PureMultipleChoiceExercise
+key: a684bbd7db
+xp: 50
+```
+
+[Caucasian birth weight at a certain hospital had a mean of 3369 grams and a standard deviation of 567 grams](https://academic.oup.com/aje/article-abstract/141/12/1177/148415?redirectedFrom=fulltext). Imagine there's a new illegal drug, methacaine. 
+We want to know if when women take methcaine in pregnancy it causes lower birth weight. In the last year a hundred Caucasian women gave birth while addicted to methacaine in that hospital.
+
+To check if their mean birth weight is statistically significant, we need to know the standard distribution for a sample of a hundred birth weights. According to [this page](https://en.wikipedia.org/wiki/Standard_error#Standard_error_of_the_mean) the standard distribution of a sample mean is $\sigma\_{\bar{x}} = \frac{\sigma}{\sqrt(n)}$.
+
+What is the standard deviation for the mean of a hundred Caucasian birth weights in this hospital? Select the correct range.
+
+`@hint`
+
+
+`@possible_answers`
+-  0-25 gr
+- 25-50 gr
+- [50-75 gr]
+- 75-100 gr
+
+`@feedback`
+
+
+---
+
 ## Z-tests
 
 ```yaml
@@ -315,21 +344,18 @@ key: 5718b14ea7
 xp: 50
 ```
 
-When a variable is created by calculating the mean of a large number of values it tends to follow a [normal distribution](https://en.wikipedia.org/wiki/Central_limit_theorem). This lets us use the z-score to test for statistical significance.
+[Caucasian birth weight at a certain hospital had a mean of 3369 grams and a standard deviation of 567 grams](https://academic.oup.com/aje/article-abstract/141/12/1177/148415?redirectedFrom=fulltext). Imagine there's a new illegal drug, methacaine. 
+We want to know if when women take methcaine in pregnancy it causes lower birth weight. 
 
-For example, [Caucasian birth weight at a certain hospital had a mean of 3369 grams and a standard deviation of 567 grams](https://academic.oup.com/aje/article-abstract/141/12/1177/148415?redirectedFrom=fulltext). Imagine there's a new illegal drug, Methacaine. 
-We want to know if when women take Methcaine in pregnancy it causes lower birth weight.
+In the last year a hundred Caucasian women gave birth while addicted to methacaine in that hospital. The mean birth weight for them was 2965 grams. With a statistical significance of 5%, can we say that methachaine causes low birth weight?
 
 `@hint`
-
+- Under the null hypothesis we'd expect the mean of a sample of a hundred births to be the same as the population mean (3369 gr.), normally distributed at a standard deviation of $\sigma\_{mean} = \frac{\sigma\_{single}}{\sqrt{n}} = 56.7 gr$
+- $z = \frac{\mu_{sample} - \mu\_{population}}{\sigma\_{mean}}$
+- You can convert between z values and probabilities [here](https://www.socscistatistics.com/pvalues/normaldistribution.aspx).
 
 `@possible_answers`
-- [Correct answer 1]
-- Wrong answer 2
-- Wrong answer 3
+- [The alternative hypothesis is correct and methcaine causes lower birth weight]
+- The null hypothesis is correct and methcaine does not cause lower birth weight
 
 `@feedback`
-<!-- Examples of good feedback messages: https://instructor-support.datacamp.com/en/articles/2299773-exercise-success-messages.  -->
-- Perfect!
-- Error message answer 2
-- Error message answer 3
