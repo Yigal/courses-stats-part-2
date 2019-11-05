@@ -374,7 +374,7 @@ The normal ranges for most blood components were calculated using this method:
 
 1. Measure the values for a lot of people
 1. Verify that the values are normally distributed
-1. Identify the top 5% of values and bottom 5% of values as abnormal, set the range between the 5'th percentile and the 95'th percentile.
+1. Identify the bottom 5% of values and top 5% of values as abnormal, set the range between the 5'th percentile and the 95'th percentile.
 
 In the case of blood sodium, the normal range is 135-145 $[\frac{mm}{L}]$. What is the standard deviation?
 
