@@ -358,3 +358,36 @@ In the last year a hundred Caucasian women gave birth while addicted to methacai
 - The null hypothesis is correct and methcaine does not cause lower birth weight
 
 `@feedback`
+
+
+---
+
+## Z scores and blood sodium
+
+```yaml
+type: PureMultipleChoiceExercise
+key: c56b953e7f
+xp: 50
+```
+
+The normal ranges for most blood components were calculated using this method:
+
+1. Measure the values for a lot of people
+1. Verify that the values are normally distributed
+1. Identify the top 5% of values and bottom 5% of values as abnormal, set the range between the 5'th percentile and the 95'th percentile.
+
+In the case of blood sodium, the normal range is 135-145 $[\frac{mm}{L}]$. What is the standard deviation?
+
+Note: Select the correct range
+
+`@hint`
+1. The normal distribution is symmetrical. The 5'th percentile and the 95'th percentile are an equal distance from the mean.
+1. You can use [a z calculator](https://measuringu.com/zcalcp/) to identify the z score that corresponds to 5%. Note that it should be one tailed 5%, because they defined as out of the range both the bottom 5% and the top 5%. If you calculate a two tailed value, it is 10%, the total percent defined as abnormal.
+1. $z = \frac{x-E(x)}{\sigma} \implies \sigma = \frac{x-E(x)}{z}$.
+
+`@possible_answers`
+- < 1.5 $[\frac{mm}{L}]$
+- 1.5-2.5 $[\frac{mm}{L}]$
+- [2.5-3.5 $[\frac{mm}{L}]$]
+
+`@feedback`
