@@ -369,7 +369,7 @@ What is the standard deviation for the mean of a hundred Caucasian birth weights
 
 ---
 
-## Z-tests
+## Z-test (known standard deviation)
 
 ```yaml
 type: PureMultipleChoiceExercise
@@ -389,5 +389,36 @@ In the last year a hundred Caucasian women gave birth while addicted to methacai
 `@possible_answers`
 - [The alternative hypothesis is correct and methcaine causes lower birth weight]
 - The null hypothesis is correct and methcaine does not cause lower birth weight
+
+`@feedback`
+
+
+---
+
+## One tail and two tails
+
+```yaml
+type: PureMultipleChoiceExercise
+key: dc62d7821c
+xp: 50
+```
+
+Sometimes an experiment is to show change in a specific direction, such as low birth weight when the mother is on methacaine. At other times, we just want to identify if there's an effect, regardless of direction. For example, to show that a certain medicine is safe, we need to show it does not affect unrelated medical variables in either direction.
+
+To do this, we look at both tails of the distribution, the high end and the low end. This is called a [two-tailed test](https://www.investopedia.com/terms/t/two-tailed-test.asp). The $p$ probability we are focusing on (also called $\alpha$) is the probability of a Type I error (a false positive, rejecting the null hypothesis when it is true). 
+
+If the acceptable chance of a Type I error is $0.05$, what is the acceptable chance of the sample mean being too high?
+
+`@hint`
+In the null hypothesis is correct, the sample mean is expected to follow the normal distribution and be symmetrical around the mean value.
+
+`@possible_answers`
+- 0
+- 0.01
+- 0.2
+- [0.025]
+- 0.05
+- 0.075
+- 0.1
 
 `@feedback`
