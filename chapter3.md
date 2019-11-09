@@ -410,7 +410,7 @@ To do this, we look at both tails of the distribution, the high end and the low 
 If the acceptable chance of a Type I error is $0.05$, what is the acceptable chance of the sample mean being too high?
 
 `@hint`
-In the null hypothesis is correct, the sample mean is expected to follow the normal distribution and be symmetrical around the mean value.
+If the null hypothesis is correct, the sample mean is expected to follow the normal distribution and be symmetrical around the mean value.
 
 `@possible_answers`
 - 0
