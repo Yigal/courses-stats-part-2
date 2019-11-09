@@ -426,7 +426,7 @@ If the null hypothesis is correct, the sample mean is expected to follow the nor
 
 ---
 
-## Estimating the standard deviation
+## Estimating parameters from samples
 
 ```yaml
 type: PureMultipleChoiceExercise
@@ -434,7 +434,12 @@ key: 001c9e3b1b
 xp: 50
 ```
 
-<!-- Guidelines for the question: https://instructor-support.datacamp.com/en/articles/2375516-course-multiple-choice-exercises. -->
+To calculate the z-score and check the hypothesis, we need two parameters for the original, untreated, population:
+
+- The population mean 
+- The population standard deviation
+
+The population mean is relatively easy to calculate 
 
 `@hint`
 
