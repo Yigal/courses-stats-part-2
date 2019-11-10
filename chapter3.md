@@ -439,14 +439,14 @@ To calculate the z-score and check the hypothesis, we need two parameters for th
 - The population mean 
 - The population standard deviation
 
-The population mean is relatively easy to approximate using the mean of a sample.  
+The population mean is relatively easy to approximate using the mean of a sample. But when the sample size is small, the standard deviation is biased to be different from the population standard deviation. In what way?
 
 `@hint`
-
+In the extreme case of a sample of one, the mean is equal to the sample value. What is the standard deviation then?
 
 `@possible_answers`
-- [Correct answer 1]
-- Wrong answer 2
-- Wrong answer 3
+- [The sample standard deviation is likely to be smaller than the real standard deviation]
+- The statement above is untrue. The sample standard deviation is a good approximation of the population standard deviation
+- The sample standard deviation is likely to be bigger than the real standard deviation
 
 `@feedback`
