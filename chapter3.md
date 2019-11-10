@@ -489,7 +489,16 @@ You are given two lists of values: `treated` and `untreated`. From those two lis
 
 `@pre_exercise_code`
 ```{python}
+import random
 
+random.seed(10)
+
+treated = []
+untreated = []
+
+for i in range(10):
+  untreated.append(random.normalvariate(0,1))
+  treated.append(random.normalvariate(5,1))
 ```
 
 `@sct`
