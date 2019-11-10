@@ -517,3 +517,24 @@ print (diff/meanSD)
 ```{python}
 # Check https://instructor-support.datacamp.com/en/articles/2375523-course-multiple-choice-with-console-exercises on how to write feedback messages for this exercise.
 ```
+
+---
+
+## Interpret a t-score
+
+```yaml
+type: PureMultipleChoiceExercise
+key: 11668cc67d
+xp: 50
+```
+
+The t-score from the previous question is approximately 1.9. The sample size is ten, so there are nine degrees of freedom. Use a [t-score calculator](http://www.ttable.org/student-t-value-calculator.html) to decide if the result is statistically significant.
+
+`@hint`
+The value the calculator produces is the minimum absolute value of the t-score at which the result is statistically significant.
+
+`@possible_answers`
+- The result is never significant
+- [The result is significant if we only care ]
+
+`@feedback`
