@@ -454,15 +454,16 @@ In the extreme case of a sample of one, the mean is equal to the sample value. W
 
 ---
 
-## Student's T-test
+## T-score
 
 ```yaml
-type: PureMultipleChoiceExercise
-key: 548128884c
+type: MultipleChoiceExercise
+key: dd5fa5603d
 xp: 50
 ```
 
-When we need to estimate the standard deviation from a small sample (typically less than thirty values), we can use [Student's T-test](https://www.britannica.com/science/Students-t-test). The calculation of the expected standard deviation is complex, so we [use a lookup table](http://www.ttable.org/student-t-value-calculator.html) instead.
+When we need to deal with an unknown standard deviation using 
+a small sample (typically less than thirty values), we can use [Student's T-test](https://www.britannica.com/science/Students-t-test). The calculation is complex, so we [use a lookup table](http://www.ttable.org/student-t-value-calculator.html) instead, looking at the t-score rather than the z-score.
 
 The t-score is calculated similarly to the z-score, but using sample values instead of population values. When the control sample is the same size as the treated sample, the t-score is calculated using this formula:
 
@@ -474,12 +475,24 @@ $t = \frac{\overline{x\_{treated}}-\overline{x\_{control}}}{s/\sqrt{n}}$
 - $s$ is the standard deviation of the variable in the control population
 - $n$ is the number of samples in the treated population
 
-`@hint`
-
+You are given two lists of values: `treated` and `untreated`. From those two lists, calculate the t-score and select the correct range.
 
 `@possible_answers`
 - [Correct answer 1]
 - Wrong answer 2
 - Wrong answer 3
 
-`@feedback`
+`@hint`
+<!-- Examples of good hints: https://instructor-support.datacamp.com/en/articles/2379164-hints-best-practices. -->
+- This is an example hint.
+- This is an example hint.
+
+`@pre_exercise_code`
+```{python}
+
+```
+
+`@sct`
+```{python}
+# Check https://instructor-support.datacamp.com/en/articles/2375523-course-multiple-choice-with-console-exercises on how to write feedback messages for this exercise.
+```
