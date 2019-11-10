@@ -475,6 +475,8 @@ $t = \frac{\overline{x\_{treated}}-\overline{x\_{control}}}{s/\sqrt{n}}$
 - $s$ is the standard deviation of the variable in the control population
 - $n$ is the number of samples in the treated population
 
+Note: When calculating the standard deviation of a sample, we use $N-1$ for reasons that are [explained here](https://www.khanacademy.org/math/ap-statistics/summarizing-quantitative-data-ap/more-standard-deviation/v/review-and-intuition-why-we-divide-by-n-1-for-the-unbiased-sample-variance)
+
 You are given two lists of values: `treated` and `untreated`. From those two lists, calculate the t-score and select the correct range.
 
 `@possible_answers`
