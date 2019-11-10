@@ -464,8 +464,6 @@ xp: 50
 
 When we need to estimate the standard deviation from a small sample (typically less than thirty values), we can use [Student's T-test](https://www.britannica.com/science/Students-t-test). For a given sample size that is normally distributed, the expected standard deviation is a constant multiple of the population standard deviation. However, the calculation is complex so instead of doing it every time we [use a lookup table](http://www.ttable.org/student-t-value-calculator.html).
 
-
-
 `@hint`
 
 
