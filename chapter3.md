@@ -474,8 +474,6 @@ $t = \frac{\overline{x\_{treated}}-\overline{x\_{control}}}{s/\sqrt{n}}$
 - $s$ is the standard deviation of the variable in the control population
 - $n$ is the number of samples in the treated population
 
-
-
 `@hint`
 
 
