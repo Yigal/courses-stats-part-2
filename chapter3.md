@@ -462,7 +462,19 @@ key: 548128884c
 xp: 50
 ```
 
-When we need to estimate the standard deviation from a small sample (typically less than thirty values), we can use [Student's T-test](https://www.britannica.com/science/Students-t-test). For a given sample size that is normally distributed, the expected standard deviation is a constant multiple of the population standard deviation. However, the calculation is complex so instead of doing it every time we [use a lookup table](http://www.ttable.org/student-t-value-calculator.html).
+When we need to estimate the standard deviation from a small sample (typically less than thirty values), we can use [Student's T-test](https://www.britannica.com/science/Students-t-test). The calculation of the expected standard deviation is complex, so we [use a lookup table](http://www.ttable.org/student-t-value-calculator.html) instead.
+
+The t-score is calculated similarly to the z-score, but using sample values instead of population values. When the control sample is the same size as the treated sample, the t-score is calculated using this formula:
+
+$t = \frac{\overline{x\_{treated}}-\overline{x\_{control}}}{s/\sqrt{n}}$
+
+- $t$ is the t score
+- $\overline{x\_{treated}}$ is the mean of the variable in the treated population
+- $\overline{x\_{control}}$ is the mean of the variable in the control population. If the real population mean ($\mu$) is known, use that instead.
+- $s$ is the standard deviation of the variable in the control population
+- $n$ is the number of samples in the treated population
+
+
 
 `@hint`
 
