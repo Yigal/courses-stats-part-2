@@ -450,3 +450,28 @@ In the extreme case of a sample of one, the mean is equal to the sample value. W
 - The sample standard deviation is likely to be bigger than the real standard deviation
 
 `@feedback`
+
+
+---
+
+## Student's T-test
+
+```yaml
+type: PureMultipleChoiceExercise
+key: 548128884c
+xp: 50
+```
+
+When we need to estimate the standard deviation from a small sample (typically less than thirty values), we can use [Student's T-test](https://www.britannica.com/science/Students-t-test). For a given sample size that is normally distributed, the expected standard deviation is a constant multiple of the population standard deviation. However, the calculation is complex so instead of doing it every time we [use a lookup table](http://www.ttable.org/student-t-value-calculator.html).
+
+
+
+`@hint`
+
+
+`@possible_answers`
+- [Correct answer 1]
+- Wrong answer 2
+- Wrong answer 3
+
+`@feedback`
