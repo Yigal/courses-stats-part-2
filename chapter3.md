@@ -439,7 +439,7 @@ To calculate the z-score and check the hypothesis, we need two parameters for th
 - The population mean 
 - The population standard deviation
 
-The population mean is relatively easy to calculate 
+The population mean is relatively easy to approximate using the mean of a sample.  
 
 `@hint`
 
