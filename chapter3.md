@@ -478,14 +478,14 @@ $t = \frac{\overline{x\_{treated}}-\overline{x\_{control}}}{s/\sqrt{n}}$
 You are given two lists of values: `treated` and `untreated`. From those two lists, calculate the t-score and select the correct range.
 
 `@possible_answers`
-- [Correct answer 1]
-- Wrong answer 2
-- Wrong answer 3
+- 0-0.5
+- 0.5-1
+- 1-1.5
+- [1.5-2]
+- 2-2.5
 
 `@hint`
-<!-- Examples of good hints: https://instructor-support.datacamp.com/en/articles/2379164-hints-best-practices. -->
-- This is an example hint.
-- This is an example hint.
+
 
 `@pre_exercise_code`
 ```{python}
@@ -497,8 +497,18 @@ treated = []
 untreated = []
 
 for i in range(10):
-  untreated.append(random.normalvariate(0,1))
-  treated.append(random.normalvariate(5,1))
+  untreated.append(random.normalvariate(0,2))
+  treated.append(random.normalvariate(1,1))
+  
+
+"""
+import statistics
+import math
+
+diff = statistics.mean(treated)-statistics.mean(untreated)
+meanSD = statistics.stdev(untreated)/math.sqrt(len(treated))
+print (diff/meanSD)
+"""
 ```
 
 `@sct`
