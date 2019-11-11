@@ -584,7 +584,7 @@ Background: a variable is normally distributed with $E(x)=0, \sigma=1$. If a cer
 
 We use the z-test, because we have no need to estimate the standard deviation - it is given. 
 
-Select the correct range for $\alpha$, the chance that we'd reject the null hypothesis even though it is correct (type I error). 
+Select the correct range for $\alpha$, the chance that we'd reject the null hypothesis even though it is correct (type I error).
 
 `@hint`
 - Calculate the z-score ($z = \frac{\mu-E(x)}{\sigma / \sqrt{n}}$)
@@ -613,7 +613,7 @@ xp: 50
 
 Background: a variable is normally distributed with $E(x)=0, \sigma=1$. If a certain treatment is successful, we'd expect that variable in the treated group to be normally distributed with $E(x)=3, \sigma=2$. We run an experiment and got ten results, with a mean value of $\mu=2$. We want to know how likely this result is under the null hypothesis, and how likely it is under the alternate hypothesis. 
 
-Select the correct range for $\beta$, the chance that we'd reject the alternative hypothesis even though it is correct (type II error). 
+Select the correct range for $\beta$, the chance that we'd reject the alternative hypothesis even though it is correct (type II error).
 
 `@hint`
 - Calculate the z-score ($z = \frac{\mu-E(x)}{\sigma / \sqrt{n}}$)
