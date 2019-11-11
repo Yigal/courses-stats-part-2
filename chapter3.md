@@ -556,7 +556,7 @@ A [type I error](https://en.wikipedia.org/wiki/Type_I_and_type_II_errors) is a *
 
 The other type, [type II error](https://en.wikipedia.org/wiki/Type_I_and_type_II_errors), is a **false negative**. It happens when we accept the null hypothesis even though the alternate hypothesis is correct. 
 
-Lets say that a variable is normally distributed with $\E(x)=0, \sigma=1$. If a certain treatment is successful, we'd expect that variable in the treated group to be normally distributed with $\E(x)=3, \sigma=2$. We run an experiment and got ten results, with a mean value of $\mu=2$. We want to know how likely this result is under the null hypothesis, and how likely it is under the alternate hypothesis. 
+Lets say that a variable is normally distributed with $E(x)=0, \sigma=1$. If a certain treatment is successful, we'd expect that variable in the treated group to be normally distributed with $E(x)=3, \sigma=2$. We run an experiment and got ten results, with a mean value of $\mu=2$. We want to know how likely this result is under the null hypothesis, and how likely it is under the alternate hypothesis. 
 
 The first question is what test to use.
 
@@ -568,3 +568,68 @@ The first question is what test to use.
 - T-test, because the sample is small.
 
 `@feedback`
+
+
+---
+
+## Error types #2
+
+```yaml
+type: PureMultipleChoiceExercise
+key: b3fdf0b31a
+xp: 50
+```
+
+Background: a variable is normally distributed with $E(x)=0, \sigma=1$. If a certain treatment is successful, we'd expect that variable in the treated group to be normally distributed with $E(x)=3, \sigma=2$. We run an experiment and got ten results, with a mean value of $\mu=2$. We want to know how likely this result is under the null hypothesis, and how likely it is under the alternate hypothesis. 
+
+We use the z-test, because we have no need to estimate the standard deviation - it is given. 
+
+Select the correct range for $\alpha$, the chance that we'd reject the null hypothesis even though it is correct (type I error). 
+
+`@hint`
+- Calculate the z-score ($z = \frac{\mu-E(x)}{\sigma / \sqrt{n}}$)
+- Use an [online calculator](https://www.socscistatistics.com/pvalues/normaldistribution.aspx) to convert the z-score to a probability
+
+`@possible_answers`
+- [0-0.00001]
+- 0.00001-0.0001
+- 0.0001-0.001
+- 0.001-0.01
+- 0.01-0.1
+- 0.1-1
+
+`@feedback`
+
+
+---
+
+## Error types #3
+
+```yaml
+type: PureMultipleChoiceExercise
+key: 19ab6f6a3c
+xp: 50
+```
+
+Background: a variable is normally distributed with $E(x)=0, \sigma=1$. If a certain treatment is successful, we'd expect that variable in the treated group to be normally distributed with $E(x)=3, \sigma=2$. We run an experiment and got ten results, with a mean value of $\mu=2$. We want to know how likely this result is under the null hypothesis, and how likely it is under the alternate hypothesis. 
+
+Select the correct range for $\beta$, the chance that we'd reject the alternative hypothesis even though it is correct (type II error). 
+
+`@hint`
+- Calculate the z-score ($z = \frac{\mu-E(x)}{\sigma / \sqrt{n}}$)
+- Use an [online calculator](https://www.socscistatistics.com/pvalues/normaldistribution.aspx) to convert the z-score to a probability
+- Use the absolute value of the z-score
+
+`@possible_answers`
+- 0-0.00001
+- 0.00001-0.0001
+- 0.0001-0.001
+- 0.001-0.01
+- [0.01-0.1]
+- 0.1-1
+
+`@feedback`
+<!-- Examples of good feedback messages: https://instructor-support.datacamp.com/en/articles/2299773-exercise-success-messages.  -->
+- Perfect!
+- Error message answer 2
+- Error message answer 3
