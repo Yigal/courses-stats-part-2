@@ -540,3 +540,24 @@ The value the calculator produces is the minimum absolute value of the t-score a
 - Whether we are doing one-tailed (one side only) or two-tailed (change in general), this result is significant
 
 `@feedback`
+
+
+---
+
+## Type I errors
+
+```yaml
+type: PureMultipleChoiceExercise
+key: b400e91835
+xp: 50
+```
+
+A [Type I error](https://en.wikipedia.org/wiki/Type_I_and_type_II_errors) is a **false positive**, an error where we reject the null hypothesis (and accept the alternate hypothesis) despite the null hypothesis being true. When we accept a certain $p$ value, it means that 
+
+`@hint`
+
+
+`@possible_answers`
+
+
+`@feedback`
