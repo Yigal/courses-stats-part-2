@@ -535,6 +535,8 @@ The value the calculator produces is the minimum absolute value of the t-score a
 
 `@possible_answers`
 - The result is never significant
-- [The result is significant if we only care ]
+- [The result is significant if we only care about one side (bigger or smaller). It is not significant if we care about change in general]
+- The result is significant if we only care about change in general. It is not significant if we care about one side (bigger or smaller)
+- Whether we are doing one-tailed (one side only) or two-tailed (change in general), this result is significant
 
 `@feedback`
