@@ -544,7 +544,7 @@ The value the calculator produces is the minimum absolute value of the t-score a
 
 ---
 
-## Type I errors
+## Error types #1
 
 ```yaml
 type: PureMultipleChoiceExercise
@@ -552,12 +552,19 @@ key: b400e91835
 xp: 50
 ```
 
-A [Type I error](https://en.wikipedia.org/wiki/Type_I_and_type_II_errors) is a **false positive**, an error where we reject the null hypothesis (and accept the alternate hypothesis) despite the null hypothesis being true. When we accept a certain $p$ value, it means that 
+A [type I error](https://en.wikipedia.org/wiki/Type_I_and_type_II_errors) is a **false positive**, an error where we reject the null hypothesis (and accept the alternate hypothesis) despite the null hypothesis being true. When we accept a certain $p$ value, we accept that likelihood of a Type I error. 
+
+The other type, [type II error](https://en.wikipedia.org/wiki/Type_I_and_type_II_errors), is a **false negative**. It happens when we accept the null hypothesis even though the alternate hypothesis is correct. 
+
+Lets say that a variable is normally distributed with $\E(x)=0, \sigma=1$. If a certain treatment is successful, we'd expect that variable in the treated group to be normally distributed with $\E(x)=3, \sigma=2$. We run an experiment and got ten results, with a mean value of $\mu=2$. We want to know how likely this result is under the null hypothesis, and how likely it is under the alternate hypothesis. 
+
+The first question is what test to use.
 
 `@hint`
 
 
 `@possible_answers`
-
+- [Z-test, because we know the standard deviation]
+- T-test, because the sample is small.
 
 `@feedback`
