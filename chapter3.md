@@ -633,3 +633,59 @@ Select the correct range for $\beta$, the chance that we'd reject the alternativ
 - Perfect!
 - Error message answer 2
 - Error message answer 3
+
+---
+
+## Chi-square test
+
+```yaml
+type: TabExercise
+key: 349632aaab
+xp: 100
+```
+
+So far we dealt with either interval or rational variables. However, those are not the only types of data. When we have two categorical variables, we can use the [chi-square test](https://www.mathsisfun.com/data/chi-square-test.html) to get the probability that they are dependent, that the distribution of one variable is different depending on the value of the other variable.
+
+In this exercise you get a pandas data frame, `housingData` (the same one you used in part 1). Each entry has a material the external walls are built from (`Exterior1st`) and a type of veneer (`MasVnrType`). We want to know if those values are correlated.
+
+`@pre_exercise_code`
+```{python}
+url = "https://assets.datacamp.com/production/repositories/5459/datasets/fa19780a7b011d9b009e8bff8e99922a8ee2eb90/housing_prices_data.csv"
+
+from io import StringIO
+
+import pandas as pd
+import requests
+s = requests.get(url).text
+
+housingData = pd.read_csv(StringIO(s))
+```
+
+***
+
+```yaml
+type: NormalExercise
+key: 26126fef2e
+xp: 100
+```
+
+`@instructions`
+Use [the `value_counts` function](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.value_counts.html) to get the different values.
+
+`@hint`
+
+
+`@sample_code`
+```{python}
+
+```
+
+`@solution`
+```{python}
+
+```
+
+`@sct`
+```{python}
+# Examples of good success messages: https://instructor-support.datacamp.com/en/articles/2299773-exercise-success-messages.
+```
