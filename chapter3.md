@@ -684,25 +684,31 @@ Create a variable called `table` that contains a dictionary. In that dictionary,
 
 `@sample_code`
 ```{python}
-x = "hello, world"
-```
 
-`@solution`
-```{python}
-"""
-exteriors = housingData['Exterior1st'].unique()
-veneers = housingData['MasVnrType'].unique()
+exteriors = housingData['Exterior1st'].unique().tolist()
+veneers = housingData['MasVnrType'].unique().tolist()
 
 table = dict()
 for exterior in exteriors:
   for veneer in veneers:
-    table[exterior, veneer] = housingData[housingData['Exterior1st']==exterior][housingData['MasVnrType']==veneer].shape[0]
-"""    
+    table[exterior, veneer] = housingData[housingData['Exterior1st']==exterior and housingData['MasVnrType']==veneer].shape[0]
 
-x = "hello, world"
+```
+
+`@solution`
+```{python}
+
+exteriors = housingData['Exterior1st'].unique().tolist()
+veneers = housingData['MasVnrType'].unique().tolist()
+
+table = dict()
+for exterior in exteriors:
+  for veneer in veneers:
+    table[exterior, veneer] = housingData[housingData['Exterior1st']==exterior and housingData['MasVnrType']==veneer].shape[0]
+
 ```
 
 `@sct`
 ```{python}
-Ex().check_object("x").has_equal_value()
+Ex().check_object("veneers").has_equal_value()
 ```
