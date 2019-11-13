@@ -691,15 +691,9 @@ Create a variable called `table` that contains a dictionary. In that dictionary,
 ```{python}
 exteriors = housingData['Exterior1st'].unique()
 veneers = housingData['MasVnrType'].unique()
-
-table = dict()
-for exterior in exteriors:
-  for veneer in veneers:
-    table[exterior, veneer] = housingData[housingData['Exterior1st']==exterior][housingData['MasVnrType']==veneer].shape[0]
-
 ```
 
 `@sct`
 ```{python}
-Ex().check_object("table").has_equal_value()
+Ex().check_object("veneers").has_equal_value()
 ```
