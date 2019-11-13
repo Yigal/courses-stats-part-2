@@ -684,31 +684,67 @@ Create a variable called `table` that contains a dictionary. In that dictionary,
 
 `@sample_code`
 ```{python}
-
 exteriors = housingData['Exterior1st'].unique().tolist()
 veneers = housingData['MasVnrType'].unique().tolist()
 
-table = dict()
-for exterior in exteriors:
-  for veneer in veneers:
-    table[exterior, veneer] = housingData[housingData['Exterior1st']==exterior and housingData['MasVnrType']==veneer].shape[0]
+import itertools
 
+table = {}
+for i in itertools.product(exteriors, veneers):
+  table[i] = 1
+  
+
+"""
+for exterior in exteriors:
+  for veneer in veneers:
+      lst1 = (housingData['Exterior1st'] == exterior)
+      lst2 = (housingData['MasVnrType'] == veneer)
+      table[exterior, veneer] = 1 # sum([a and b for (a,b) in zip(lst1,lst2)])
+"""
 ```
 
 `@solution`
 ```{python}
+url = "https://assets.datacamp.com/production/repositories/5459/datasets/fa19780a7b011d9b009e8bff8e99922a8ee2eb90/housing_prices_data.csv"
+
+from io import StringIO
+
+import pandas as pd
+import requests
+s = requests.get(url).text
+
+housingData = pd.read_csv(StringIO(s))
 
 exteriors = housingData['Exterior1st'].unique().tolist()
 veneers = housingData['MasVnrType'].unique().tolist()
 
-table = dict()
-for exterior in exteriors:
-  for veneer in veneers:
-    table[exterior, veneer] = housingData[housingData['Exterior1st']==exterior and housingData['MasVnrType']==veneer].shape[0]
+import itertools
 
+# table = dict()
+# for element in itertools.product(exteriors, veneers):
+#  table[element] = 1
+
+# Works:
+table = []
+for i in itertools.product(exteriors, veneers):
+  table.append(i)
+
+# Fails:  
+table = {}
+for i in itertools.product(exteriors, veneers):
+  table[i] = 1
+  
+  
+"""
+for exterior in exteriors:
+  for veneer in veneers:
+      lst1 = (housingData['Exterior1st'] == exterior)
+      lst2 = (housingData['MasVnrType'] == veneer)
+      table[exterior, veneer] = 1 # sum([a and b for (a,b) in zip(lst1,lst2)])
+"""
 ```
 
 `@sct`
 ```{python}
-Ex().check_object("veneers").has_equal_value()
+Ex().check_object("table").has_equal_value()
 ```
