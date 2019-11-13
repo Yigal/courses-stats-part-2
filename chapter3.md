@@ -674,35 +674,18 @@ Create a data frame called `table` that contains three fields: `Exterior1st`, `M
 
 `@hint`
 - Use the [`unique`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.unique.html?highlight=unique#pandas.Series.unique) function to get the different values in the two relevant columns.
+- You can use [this technique](https://cmdlinetips.com/2018/02/how-to-subset-pandas-dataframe-based-on-values-of-a-column/) to identify which rows have a specific exterior or veneer
+- If `l1` and `l2` are lists of booleans, `[a and b for (a,b) in zip(l1, l2)]` only has `True` where both lists are true.
+- Use `sum(list)` to get the number of `True` values in a list of booleans.
+- You can insert to a data frame using [`.loc`](https://stackoverflow.com/questions/10715965/add-one-row-to-pandas-dataframe)
 
 `@sample_code`
 ```{python}
-exteriors = housingData['Exterior1st'].unique().tolist()
-veneers = housingData['MasVnrType'].unique().tolist()
-
-table = pd.DataFrame(columns = ['Exterior1st', 'MasVnrType', 'num'])
-
-i = 0
-
-for exterior in exteriors:
-  for veneer in veneers:
-    table.loc[i] = [exterior, veneer, 1]
-    i = i+1
 
 ```
 
 `@solution`
 ```{python}
-url = "https://assets.datacamp.com/production/repositories/5459/datasets/fa19780a7b011d9b009e8bff8e99922a8ee2eb90/housing_prices_data.csv"
-
-from io import StringIO
-
-import pandas as pd
-import requests
-s = requests.get(url).text
-
-housingData = pd.read_csv(StringIO(s))
-
 exteriors = housingData['Exterior1st'].unique().tolist()
 veneers = housingData['MasVnrType'].unique().tolist()
 
@@ -713,36 +696,11 @@ i = 0
 
 for exterior in exteriors:
   for veneer in veneers:
-    table.loc[i] = [exterior, veneer, 1]
+    lst1 = (housingData['Exterior1st'] == exterior)
+    lst2 = (housingData['MasVnrType'] == veneer)
+    table.loc[i] = [exterior, veneer, sum([a and b for (a,b) in zip(lst1,lst2)])]
     i = i+1
-    
-    
-# table = dict()
-# for element in itertools.product(exteriors, veneers):
-#  table[element] = 1
-"""
-# Fails
-table = []
-for i in itertools.product(exteriors, veneers):
-  table.append((i[0], i[1], 1))
-  
-table = pd.DataFrame.from_records(table)
 
-# Fails:  
-table = {}
-for i in itertools.product(exteriors, veneers):
-  table[i] = 1
-"""  
-  
-  
-  
-"""
-for exterior in exteriors:
-  for veneer in veneers:
-      lst1 = (housingData['Exterior1st'] == exterior)
-      lst2 = (housingData['MasVnrType'] == veneer)
-      table[exterior, veneer] = 1 # sum([a and b for (a,b) in zip(lst1,lst2)])
-"""
 ```
 
 `@sct`
