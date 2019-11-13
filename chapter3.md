@@ -689,9 +689,11 @@ veneers = housingData['MasVnrType'].unique().tolist()
 
 import itertools
 
-table = {}
+table = []
 for i in itertools.product(exteriors, veneers):
-  table[i] = 1
+  table.append((i[0], i[1], 1))
+  
+table = pd.DataFrame.from_records(table)
   
 
 """
@@ -724,15 +726,19 @@ import itertools
 # for element in itertools.product(exteriors, veneers):
 #  table[element] = 1
 
-# Works:
+# Fails
 table = []
 for i in itertools.product(exteriors, veneers):
-  table.append(i)
+  table.append((i[0], i[1], 1))
+  
+table = pd.DataFrame.from_records(table)
 
 # Fails:  
 table = {}
 for i in itertools.product(exteriors, veneers):
   table[i] = 1
+  
+  
   
   
 """
