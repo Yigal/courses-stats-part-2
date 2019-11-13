@@ -707,3 +707,46 @@ for exterior in exteriors:
 ```{python}
 Ex().check_object("table").has_equal_value()
 ```
+
+***
+
+```yaml
+type: NormalExercise
+key: bafc3c40ff
+```
+
+`@instructions`
+Create two objects, `exteriorTotal` and `veneerTotal` with the number of houses with each type of exterior and veneer. Use the pandas [`groupby`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.groupby.html?highlight=groupby#pandas.DataFrame.groupby) function.
+
+`@hint`
+[See here](https://stackoverflow.com/questions/39922986/pandas-group-by-and-sum).
+
+`@sample_code`
+```{python}
+exteriors = housingData['Exterior1st'].unique().tolist()
+veneers = housingData['MasVnrType'].unique().tolist()
+
+
+table = pd.DataFrame(columns = ['Exterior1st', 'MasVnrType', 'num'])
+
+i = 0
+
+for exterior in exteriors:
+  for veneer in veneers:
+    lst1 = (housingData['Exterior1st'] == exterior)
+    lst2 = (housingData['MasVnrType'] == veneer)
+    table.loc[i] = [exterior, veneer, sum([a and b for (a,b) in zip(lst1,lst2)])]
+    i = i+1
+
+```
+
+`@solution`
+```{python}
+exteriorTotal = table.groupby('Exterior1st').sum()
+veneerTotal = table.groupby('MasVnrType').sum()
+```
+
+`@sct`
+```{python}
+Ex().check_object("exteriorTotal").has_equal_value()
+```
