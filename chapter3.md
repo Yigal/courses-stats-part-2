@@ -701,5 +701,5 @@ for exterior in exteriors:
 
 `@sct`
 ```{python}
-Ex().check_object("result").has_equal_value()
+Ex().check_object("table").has_equal_value()
 ```
