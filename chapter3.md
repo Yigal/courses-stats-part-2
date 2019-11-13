@@ -670,39 +670,25 @@ xp: 100
 ```
 
 `@instructions`
-Create a variable called `table` that contains a dictionary. In that dictionary, the keys are `(exterior, veneer)` tuples and the values are the number of rows with that exterior and that veneer. For example, here are three rows from `table`:
-```
- ('AsphShn', 'BrkFace'): 0,
- ('AsbShng', 'BrkFace'): 1,
- ('MetalSd', 'BrkFace'): 59,
-```
+Create a data frame called `table` that contains three fields: `Exterior1st`, `MasVnrType`, and `num`. For each exterior and veneer, have `num` contain the number of entries with that exterior and that veneer.
 
 `@hint`
 - Use the [`unique`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.unique.html?highlight=unique#pandas.Series.unique) function to get the different values in the two relevant columns.
-- Filter only the relevant rows [using this technique](https://cmdlinetips.com/2018/02/how-to-subset-pandas-dataframe-based-on-values-of-a-column/).
-- Use `.shape[0]` to get the length of the filtered data frame.
 
 `@sample_code`
 ```{python}
 exteriors = housingData['Exterior1st'].unique().tolist()
 veneers = housingData['MasVnrType'].unique().tolist()
 
-import itertools
+table = pd.DataFrame(columns = ['Exterior1st', 'MasVnrType', 'num'])
 
-table = []
-for i in itertools.product(exteriors, veneers):
-  table.append((i[0], i[1], 1))
-  
-table = pd.DataFrame.from_records(table)
-  
+i = 0
 
-"""
 for exterior in exteriors:
   for veneer in veneers:
-      lst1 = (housingData['Exterior1st'] == exterior)
-      lst2 = (housingData['MasVnrType'] == veneer)
-      table[exterior, veneer] = 1 # sum([a and b for (a,b) in zip(lst1,lst2)])
-"""
+    table.loc[i] = [exterior, veneer, 1]
+    i = i+1
+
 ```
 
 `@solution`
@@ -720,12 +706,21 @@ housingData = pd.read_csv(StringIO(s))
 exteriors = housingData['Exterior1st'].unique().tolist()
 veneers = housingData['MasVnrType'].unique().tolist()
 
-import itertools
 
+table = pd.DataFrame(columns = ['Exterior1st', 'MasVnrType', 'num'])
+
+i = 0
+
+for exterior in exteriors:
+  for veneer in veneers:
+    table.loc[i] = [exterior, veneer, 1]
+    i = i+1
+    
+    
 # table = dict()
 # for element in itertools.product(exteriors, veneers):
 #  table[element] = 1
-
+"""
 # Fails
 table = []
 for i in itertools.product(exteriors, veneers):
@@ -737,7 +732,7 @@ table = pd.DataFrame.from_records(table)
 table = {}
 for i in itertools.product(exteriors, veneers):
   table[i] = 1
-  
+"""  
   
   
   
