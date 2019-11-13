@@ -670,10 +670,17 @@ xp: 100
 ```
 
 `@instructions`
-Use [the `value_counts` function](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.value_counts.html) to get the different values.
+Create a variable called `table` that contains a dictionary. In that dictionary, the keys are `(exterior, veneer)` tuples and the values are the number of rows with that exterior and that veneer. For example, here are three rows from `table`:
+```
+ ('AsphShn', 'BrkFace'): 0,
+ ('AsbShng', 'BrkFace'): 1,
+ ('MetalSd', 'BrkFace'): 59,
+```
 
 `@hint`
-
+- Use the [`unique`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.unique.html?highlight=unique#pandas.Series.unique) function to get the different values in the two relevant columns.
+- Filter only the relevant rows [using this technique](https://cmdlinetips.com/2018/02/how-to-subset-pandas-dataframe-based-on-values-of-a-column/).
+- Use `.shape[0]` to get the length of the filtered data frame.
 
 `@sample_code`
 ```{python}
@@ -682,10 +689,17 @@ Use [the `value_counts` function](https://pandas.pydata.org/pandas-docs/stable/r
 
 `@solution`
 ```{python}
+exteriors = housingData['Exterior1st'].unique()
+veneers = housingData['MasVnrType'].unique()
+
+table = dict()
+for exterior in exteriors:
+  for veneer in veneers:
+    table[exterior, veneer] = housingData[housingData['Exterior1st']==exterior][housingData['MasVnrType']==veneer].shape[0]
 
 ```
 
 `@sct`
 ```{python}
-# Examples of good success messages: https://instructor-support.datacamp.com/en/articles/2299773-exercise-success-messages.
+Ex().check_object("result").has_equal_value()
 ```
