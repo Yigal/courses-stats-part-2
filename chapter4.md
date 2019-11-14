@@ -43,8 +43,11 @@ For a more interesting example, imagine that we have a coin that may or may not 
 
 The initial probabilities are $p\_{t=0}(H\_0) = 0.5, p\_{t=0}(H\_H) = p\_{t=0}(H\_T) = 0.25$
 
-After we throw the coin three times and get tail on each one, what are the probabilities for every hypothesis?
+After we throw the coin three times and get tail on each one, what is the probability that the coin is weighed towards tail? Select the correct range.
 
+
+
+`@hint`
 We can call the event of getting tail once T. The conditional probabilities are:
 
 $P(T | H\_0) = 0.5$
@@ -63,20 +66,21 @@ $P(H\_x | T) = \frac{P(T|H\_x) \times P(H\_x)}{P(T)}$
 
 The probability that we get T is: $0.75 \times P(H\_T) + 0.5 \times P(H\_0) + 0.25 \times P(H\_H)$
 
-For $t=0$ this gives up $P(T) = \frac{3}{4}\times \frac{1}{4} + \frac{1}{2}\times \frac{1}{2} + \frac{1}{4}\times \frac{1}{4} = \frac{1}{2}$
+For $t=0$ this gives up $P\_{t=0}(T) = \frac{3}{4}\times \frac{1}{4} + \frac{1}{2}\times \frac{1}{2} + \frac{1}{4}\times \frac{1}{4} = \frac{1}{2}$
 
-`@hint`
-<!-- Examples of good hints: https://instructor-support.datacamp.com/en/articles/2379164-hints-best-practices. -->
-- This is an example hint.
-- This is an example hint.
+$P\_{t=1}(H\_0) = P(H\_0 | T) = \frac{P(T|H\_0) \times P\_{t=0}(H\_0)}{P\_{t=0}(T)} = \frac{1}{2}$
+
+$P\_{t=1}(H\_T) = P(H\_T | T) = \frac{P(T|H\_T) \times P\_{t=0}(H\_T)}{P\_{t=0}(T)} = \frac{0.75 \times 0.25}{0.5} = \frac{3}{8}$
+
+$P\_{t=1}(H\_H) = P(H\_H | T) = \frac{P(T|H\_H) \times P\_{t=0}(H\_H)}{P\_{t=0}(T)} = \frac{0.25 \times 0.25}{0.5} = \frac{1}{8}$
+
+Repeat the process two more times to get $P\_{t=3}(H\_T)$.
 
 `@possible_answers`
-- [Correct answer 1]
-- Wrong answer 2
-- Wrong answer 3
+- 0 - 0.2
+- 0.2 - 0.4
+- 0.4 - 0.6
+- [0.6 - 0.8]
+- 0.8 - 1
 
 `@feedback`
-<!-- Examples of good feedback messages: https://instructor-support.datacamp.com/en/articles/2299773-exercise-success-messages.  -->
-- Perfect!
-- Error message answer 2
-- Error message answer 3
