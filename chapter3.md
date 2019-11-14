@@ -738,6 +738,91 @@ for exterior in exteriors:
 print (veneerTotals['Stone'])
 
 """
+
+
+# Step 3
+"""
+exteriors = housingData['Exterior1st'].unique().tolist()
+veneers = housingData['MasVnrType'].unique().tolist()
+
+table = {}
+
+exteriorTotals = {}
+for exterior in exteriors:
+	exteriorTotals[exterior] = 0
+    
+veneerTotals = {}
+for veneer in veneers:
+	veneerTotals[veneer] = 0
+
+for exterior in exteriors:
+  for veneer in veneers:
+    lst1 = (housingData['Exterior1st'] == exterior)
+    lst2 = (housingData['MasVnrType'] == veneer)
+    table[exterior, veneer] = sum([a and b for (a,b) in zip(lst1,lst2)])
+    exteriorTotals[exterior] = exteriorTotals[exterior] + table[exterior, veneer]
+    veneerTotals[veneer] = veneerTotals[veneer] + table[exterior, veneer]
+
+grandTotal = housingData.shape[0]
+
+
+expectedTable = {}
+
+for exterior in exteriors:
+  for veneer in veneers:
+  	expectedTable[exterior, veneer] = exteriorTotals[exterior]*veneerTotals[veneer]/grandTotal
+
+print (expectedTable['Plywood', 'Stone'])
+
+
+"""
+
+
+
+
+# Steps 4 and 5
+"""
+exteriors = housingData['Exterior1st'].unique().tolist()
+veneers = housingData['MasVnrType'].unique().tolist()
+
+table = {}
+
+exteriorTotals = {}
+for exterior in exteriors:
+	exteriorTotals[exterior] = 0
+    
+veneerTotals = {}
+for veneer in veneers:
+	veneerTotals[veneer] = 0
+
+for exterior in exteriors:
+  for veneer in veneers:
+    lst1 = (housingData['Exterior1st'] == exterior)
+    lst2 = (housingData['MasVnrType'] == veneer)
+    table[exterior, veneer] = sum([a and b for (a,b) in zip(lst1,lst2)])
+    exteriorTotals[exterior] = exteriorTotals[exterior] + table[exterior, veneer]
+    veneerTotals[veneer] = veneerTotals[veneer] + table[exterior, veneer]
+
+grandTotal = housingData.shape[0]
+
+
+expectedTable = {}
+
+for exterior in exteriors:
+  for veneer in veneers:
+  	expectedTable[exterior, veneer] = exteriorTotals[exterior]*veneerTotals[veneer]/grandTotal
+
+chiSq = 0
+for exterior in exteriors:
+  for veneer in veneers:
+    e = expectedTable[exterior, veneer]
+    o = table[exterior, veneer]
+    if (e > 0): 
+    	chiSq = chiSq + (o-e)**2/e
+
+print ("Chi Square", chiSq)
+print ("Degrees of freedom", (len(exteriors)-1)*(len(veneers)-1))
+"""
 ```
 
 ***
@@ -745,7 +830,7 @@ print (veneerTotals['Stone'])
 ```yaml
 type: MultipleChoiceExercise
 key: f20c17c1ae
-xp: 50
+xp: 20
 ```
 
 `@question`
@@ -773,7 +858,7 @@ Read the information in `housingData` and put it into a table. Use that table to
 ```yaml
 type: MultipleChoiceExercise
 key: 3a440d3e19
-xp: 50
+xp: 20
 ```
 
 `@question`
@@ -787,7 +872,112 @@ Create dictionaries for the total number of houses with each exterior and with e
 - 877
 
 `@hint`
-BrkFace': 434, nan: 0, 'Stone': 121, 'BrkCmn': 10, 'None': 877}
+
+
+`@sct`
+```{python}
+# Check https://instructor-support.datacamp.com/en/articles/2375523-course-multiple-choice-with-console-exercises on how to write feedback messages for this exercise.
+```
+
+***
+
+```yaml
+type: MultipleChoiceExercise
+key: c93edaf66c
+xp: 20
+```
+
+`@question`
+Create a table with the expected value for every (exterior, veneer) pair. That value is the total number of houses with that exterior, multiplied by the total number of houses with that veneer, divided by the total number of houses overall.
+
+Choose the range that contains the expected value for houses that have a Plywood exterior and a Stone veneer.
+
+`@possible_answers`
+- 0-5
+- [5-10]
+- 10-15
+- 15-20
+
+`@hint`
+
+
+`@sct`
+```{python}
+# Check https://instructor-support.datacamp.com/en/articles/2375523-course-multiple-choice-with-console-exercises on how to write feedback messages for this exercise.
+```
+
+***
+
+```yaml
+type: MultipleChoiceExercise
+key: 63eab2ce75
+xp: 20
+```
+
+`@question`
+Calculate the $\chi^2$. Select the correct range
+
+`@possible_answers`
+- 0-50
+- 50-100
+- 100-150
+- [150-200]
+
+`@hint`
+If $O\_{x,y}$ is the real value and $E\_{x,y}$ is the expected value, then 
+
+$\chi^2 = \sum \frac{(O\_{x,y}-E\_{x,y})^2}{E\_{x,y}}$
+
+`@sct`
+```{python}
+# Check https://instructor-support.datacamp.com/en/articles/2375523-course-multiple-choice-with-console-exercises on how to write feedback messages for this exercise.
+```
+
+***
+
+```yaml
+type: MultipleChoiceExercise
+key: e7baab1780
+xp: 20
+```
+
+`@question`
+How many degrees of freedom are there here? Select the correct range.
+
+`@possible_answers`
+- 0-50
+- [50-100]
+- 100-150
+- 150-200
+
+`@hint`
+If one variable has $n$ values and the other $m$ values, the degrees of freedom are $(n-1)(m-1)$
+
+`@sct`
+```{python}
+# Check https://instructor-support.datacamp.com/en/articles/2375523-course-multiple-choice-with-console-exercises on how to write feedback messages for this exercise.
+```
+
+***
+
+```yaml
+type: MultipleChoiceExercise
+key: 605ebb46d0
+```
+
+`@question`
+Use [this calculator](https://www.mathsisfun.com/data/chi-square-calculator.html) to estimate the probability that the exterior material and veneer are independent variables. Select the correct range.
+
+`@possible_answers`
+- [0-0.0001]
+- 0.0001-0.001
+- 0.001-0.01
+- 0.01-0.05
+- 0.1-0.5
+- 0.5-1
+
+`@hint`
+
 
 `@sct`
 ```{python}
