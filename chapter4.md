@@ -63,6 +63,8 @@ $P(H\_x | T) = \frac{P(T|H\_x) \times P(H\_x)}{P(T)}$
 
 The probability that we get T is: $0.75 \times P(H\_T) + 0.5 \times P(H\_0) + 0.25 \times P(H\_H)$
 
+For $t=0$ this gives up $P(T) = \frac{3}{4}\times \frac{1}{4} + \frac{1}{2}\times \frac{1}{2} + \frac{1}{4}\times \frac{1}{4} = \frac{1}{2}$
+
 
 
 
