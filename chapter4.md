@@ -35,8 +35,33 @@ If we know that A happened, what is the chance of B?
 
 $P(B|A) = \frac{P(A \land B)}{P(A)} = \frac{\frac{1}{6}}{\frac{1}{2}} = \frac{1}{3}$
 
+For a more interesting example, imagine that we have a coin that may or may not be weighed. There are three possibilities:
 
+1. $H\_0$ : The coin is fair ($)
+1. $H\_H$ : The coin is weighed (75%) towards head ($p(H\_H) = 0.25$)
+1. $H\_T$ : The coin is weighed (75%) towards tail ($p(H\_T) = 0.25$)
 
+The initial probabilities are $p\_{initial}(H\_0) = 0.5, p\_{initial}(H\_H) = p\_{initial}(H\_T) = 0.25$
+
+After we throw the coin three times and get tail on each one, what are the probabilities for every hypothesis?
+
+We can call the event of getting tail once T. The conditional probabilities are:
+
+$P(T | H\_0) = 0.5$
+
+$P(T | H\_H) = 0.25$
+
+$P(T | H\_T) = 0.75$
+
+By Bayer's rule:
+
+$P(A|B) \times P(B) = P(B|A) \times P(A) \implies P(A|B) = \frac{P(B|A) \times P(A)}{P(B)}$
+
+Therefore:
+
+$P(H\_{any} | T) = \frac{P(T|H\_{any}) \times P(H\_{any})}{P(T)}$
+
+The probability that we get T is 
 
 `@hint`
 <!-- Examples of good hints: https://instructor-support.datacamp.com/en/articles/2379164-hints-best-practices. -->
