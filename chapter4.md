@@ -41,7 +41,7 @@ For a more interesting example, imagine that we have a coin that may or may not 
 1. $H\_H$ : The coin is weighed (75%) towards head ($p(H\_H) = 0.25$)
 1. $H\_T$ : The coin is weighed (75%) towards tail ($p(H\_T) = 0.25$)
 
-The initial probabilities are $p\_{initial}(H\_0) = 0.5, p\_{initial}(H\_H) = p\_{initial}(H\_T) = 0.25$
+The initial probabilities are $p\_{t=0}(H\_0) = 0.5, p\_{t=0}(H\_H) = p\_{t=0}(H\_T) = 0.25$
 
 After we throw the coin three times and get tail on each one, what are the probabilities for every hypothesis?
 
@@ -53,15 +53,19 @@ $P(T | H\_H) = 0.25$
 
 $P(T | H\_T) = 0.75$
 
-By Bayer's rule:
+By Bayes's rule:
 
 $P(A|B) \times P(B) = P(B|A) \times P(A) \implies P(A|B) = \frac{P(B|A) \times P(A)}{P(B)}$
 
 Therefore:
 
-$P(H\_{any} | T) = \frac{P(T|H\_{any}) \times P(H\_{any})}{P(T)}$
+$P(H\_x | T) = \frac{P(T|H\_x) \times P(H\_x)}{P(T)}$
 
-The probability that we get T is 
+The probability that we get T is: $0.75 \times P(H\_T) + 0.5 \times P(H\_0) + 0.25 \times P(H\_H)$
+
+
+
+
 
 `@hint`
 <!-- Examples of good hints: https://instructor-support.datacamp.com/en/articles/2379164-hints-best-practices. -->
