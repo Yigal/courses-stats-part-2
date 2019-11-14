@@ -738,12 +738,14 @@ for exterior in exteriors:
     table.loc[i] = [exterior, veneer, sum([a and b for (a,b) in zip(lst1,lst2)])]
     i = i+1
 
+exteriorTotal = table.groupby('Exterior1st').sum()
+veneerTotal = table.groupby('MasVnrType').sum()    
+    
 ```
 
 `@solution`
 ```{python}
-exteriorTotal = table.groupby('Exterior1st').sum()
-veneerTotal = table.groupby('MasVnrType').sum()
+
 ```
 
 `@sct`
