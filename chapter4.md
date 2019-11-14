@@ -65,10 +65,6 @@ The probability that we get T is: $0.75 \times P(H\_T) + 0.5 \times P(H\_0) + 0.
 
 For $t=0$ this gives up $P(T) = \frac{3}{4}\times \frac{1}{4} + \frac{1}{2}\times \frac{1}{2} + \frac{1}{4}\times \frac{1}{4} = \frac{1}{2}$
 
-
-
-
-
 `@hint`
 <!-- Examples of good hints: https://instructor-support.datacamp.com/en/articles/2379164-hints-best-practices. -->
 - This is an example hint.
