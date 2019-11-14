@@ -639,40 +639,6 @@ Select the correct range for $\beta$, the chance that we'd reject the alternativ
 ## Chi-square
 
 ```yaml
-type: MultipleChoiceExercise
-key: 78ca02c5ca
-xp: 50
-```
-
-So far we dealt with either interval or rational variables. However, those are not the only types of data. When we have two categorical variables, we can use the [chi-square test](https://www.mathsisfun.com/data/chi-square-test.html) to get the probability that they are dependent, that the distribution of one variable is different depending on the value of the other variable.
-
-In this exercise you get a pandas data frame, `housingData` (the same one you used in part 1). Each entry has a material the external walls are built from (`Exterior1st`) and a type of veneer (`MasVnrType`). We want to know if those values are correlated, so you need to calculate the Chi-square value.
-
-`@possible_answers`
-- [Correct answer 1]
-- Wrong answer 2
-- Wrong answer 3
-
-`@hint`
-<!-- Examples of good hints: https://instructor-support.datacamp.com/en/articles/2379164-hints-best-practices. -->
-- This is an example hint.
-- This is an example hint.
-
-`@pre_exercise_code`
-```{python}
-
-```
-
-`@sct`
-```{python}
-# Check https://instructor-support.datacamp.com/en/articles/2375523-course-multiple-choice-with-console-exercises on how to write feedback messages for this exercise.
-```
-
----
-
-## Chi-square
-
-```yaml
 type: TabExercise
 key: 76d5740782
 xp: 100
