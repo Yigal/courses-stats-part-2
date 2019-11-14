@@ -636,11 +636,45 @@ Select the correct range for $\beta$, the chance that we'd reject the alternativ
 
 ---
 
-## Chi-square test
+## Chi-square
+
+```yaml
+type: MultipleChoiceExercise
+key: 78ca02c5ca
+xp: 50
+```
+
+So far we dealt with either interval or rational variables. However, those are not the only types of data. When we have two categorical variables, we can use the [chi-square test](https://www.mathsisfun.com/data/chi-square-test.html) to get the probability that they are dependent, that the distribution of one variable is different depending on the value of the other variable.
+
+In this exercise you get a pandas data frame, `housingData` (the same one you used in part 1). Each entry has a material the external walls are built from (`Exterior1st`) and a type of veneer (`MasVnrType`). We want to know if those values are correlated, so you need to calculate the Chi-square value.
+
+`@possible_answers`
+- [Correct answer 1]
+- Wrong answer 2
+- Wrong answer 3
+
+`@hint`
+<!-- Examples of good hints: https://instructor-support.datacamp.com/en/articles/2379164-hints-best-practices. -->
+- This is an example hint.
+- This is an example hint.
+
+`@pre_exercise_code`
+```{python}
+
+```
+
+`@sct`
+```{python}
+# Check https://instructor-support.datacamp.com/en/articles/2375523-course-multiple-choice-with-console-exercises on how to write feedback messages for this exercise.
+```
+
+---
+
+## Chi-square
 
 ```yaml
 type: TabExercise
-key: 349632aaab
+key: 76d5740782
 xp: 100
 ```
 
@@ -659,96 +693,103 @@ import requests
 s = requests.get(url).text
 
 housingData = pd.read_csv(StringIO(s))
+
+# Step 1
+"""
+exteriors = housingData['Exterior1st'].unique().tolist()
+veneers = housingData['MasVnrType'].unique().tolist()
+
+table = {}
+
+for exterior in exteriors:
+  for veneer in veneers:
+    lst1 = (housingData['Exterior1st'] == exterior)
+    lst2 = (housingData['MasVnrType'] == veneer)
+    table[exterior, veneer] = sum([a and b for (a,b) in zip(lst1,lst2)])
+    
+print (table['Plywood', 'Stone'])
+"""
+
+
+# Step 2
+"""
+exteriors = housingData['Exterior1st'].unique().tolist()
+veneers = housingData['MasVnrType'].unique().tolist()
+
+table = {}
+
+exteriorTotals = {}
+for exterior in exteriors:
+	exteriorTotals[exterior] = 0
+    
+veneerTotals = {}
+for veneer in veneers:
+	veneerTotals[veneer] = 0
+
+
+for exterior in exteriors:
+  for veneer in veneers:
+    lst1 = (housingData['Exterior1st'] == exterior)
+    lst2 = (housingData['MasVnrType'] == veneer)
+    table[exterior, veneer] = sum([a and b for (a,b) in zip(lst1,lst2)])
+    exteriorTotals[exterior] = exteriorTotals[exterior] + table[exterior, veneer]
+    veneerTotals[veneer] = veneerTotals[veneer] + table[exterior, veneer]
+
+print (veneerTotals['Stone'])
+
+"""
 ```
 
 ***
 
 ```yaml
-type: NormalExercise
-key: 26126fef2e
-xp: 100
+type: MultipleChoiceExercise
+key: f20c17c1ae
+xp: 50
 ```
 
-`@instructions`
-Create a data frame called `table` that contains three fields: `Exterior1st`, `MasVnrType`, and `num`. For each exterior and veneer, have `num` contain the number of entries with that exterior and that veneer.
+`@question`
+Read the information in `housingData` and put it into a table. Use that table to identify how many houses in the dataset have a Plywood exterior and a Stone veneer
+
+`@possible_answers`
+- 0
+- [6]
+- 35
+- 139
 
 `@hint`
 - Use the [`unique`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.unique.html?highlight=unique#pandas.Series.unique) function to get the different values in the two relevant columns.
 - You can use [this technique](https://cmdlinetips.com/2018/02/how-to-subset-pandas-dataframe-based-on-values-of-a-column/) to identify which rows have a specific exterior or veneer
 - If `l1` and `l2` are lists of booleans, `[a and b for (a,b) in zip(l1, l2)]` only has `True` where both lists are true.
 - Use `sum(list)` to get the number of `True` values in a list of booleans.
-- You can insert to a data frame using [`.loc`](https://stackoverflow.com/questions/10715965/add-one-row-to-pandas-dataframe)
-
-`@sample_code`
-```{python}
-
-```
-
-`@solution`
-```{python}
-exteriors = housingData['Exterior1st'].unique().tolist()
-veneers = housingData['MasVnrType'].unique().tolist()
-
-
-table = pd.DataFrame(columns = ['Exterior1st', 'MasVnrType', 'num'])
-
-i = 0
-
-for exterior in exteriors:
-  for veneer in veneers:
-    lst1 = (housingData['Exterior1st'] == exterior)
-    lst2 = (housingData['MasVnrType'] == veneer)
-    table.loc[i] = [exterior, veneer, sum([a and b for (a,b) in zip(lst1,lst2)])]
-    i = i+1
-
-```
 
 `@sct`
 ```{python}
-Ex().check_object("table").has_equal_value()
+# Check https://instructor-support.datacamp.com/en/articles/2375523-course-multiple-choice-with-console-exercises on how to write feedback messages for this exercise.
 ```
 
 ***
 
 ```yaml
-type: NormalExercise
-key: bafc3c40ff
+type: MultipleChoiceExercise
+key: 3a440d3e19
+xp: 50
 ```
 
-`@instructions`
-Create two objects, `exteriorTotal` and `veneerTotal` with the number of houses with each type of exterior and veneer. Use the pandas [`groupby`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.groupby.html?highlight=groupby#pandas.DataFrame.groupby) function.
+`@question`
+Create dictionaries for the total number of houses with each exterior and with each veneer type. Use one of those dictionaries to figure out how many houses have a Stone veneer.
+
+`@possible_answers`
+- 0
+- 10
+- [121]
+- 434
+- 877
 
 `@hint`
-[See here](https://stackoverflow.com/questions/39922986/pandas-group-by-and-sum).
-
-`@sample_code`
-```{python}
-exteriors = housingData['Exterior1st'].unique().tolist()
-veneers = housingData['MasVnrType'].unique().tolist()
-
-
-table = pd.DataFrame(columns = ['Exterior1st', 'MasVnrType', 'num'])
-
-i = 0
-
-for exterior in exteriors:
-  for veneer in veneers:
-    lst1 = (housingData['Exterior1st'] == exterior)
-    lst2 = (housingData['MasVnrType'] == veneer)
-    table.loc[i] = [exterior, veneer, sum([a and b for (a,b) in zip(lst1,lst2)])]
-    i = i+1
-
-exteriorTotal = table.groupby('Exterior1st').sum()
-veneerTotal = table.groupby('MasVnrType').sum()    
-    
-```
-
-`@solution`
-```{python}
-
-```
+BrkFace': 434, nan: 0, 'Stone': 121, 'BrkCmn': 10, 'None': 877}
 
 `@sct`
 ```{python}
-Ex().check_object("exteriorTotal").has_equal_value()
+# Check https://instructor-support.datacamp.com/en/articles/2375523-course-multiple-choice-with-console-exercises on how to write feedback messages for this exercise.
 ```
