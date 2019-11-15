@@ -307,7 +307,7 @@ Note: Select the correct range.
 
 ---
 
-## Z scores and blood sodium
+## Z-scores and blood sodium
 
 ```yaml
 type: PureMultipleChoiceExercise
