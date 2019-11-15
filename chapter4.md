@@ -88,7 +88,7 @@ Repeat the process two more times to get $P\_{t=3}(H\_T)$.
 
 ---
 
-## Confidence interval
+## Confidence interval (known standard deviation)
 
 ```yaml
 type: PureMultipleChoiceExercise
