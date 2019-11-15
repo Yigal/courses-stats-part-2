@@ -96,20 +96,25 @@ key: 6ba65bb6d3
 xp: 50
 ```
 
-Using the z-score we can calculate how likely it is that an observed value would fall in a specific range belongs to a specific normal distribution. For example, if $E(x)=0, \sigma =1$
+Using the z-score we can calculate how likely it is that an observed value would fall in a specific range belongs to a specific normal distribution. For example, if $\mu=0, \sigma =1$ then there is a 0.05 probability of an observed value $|x| > 1.95996$. 1.95996 is the z-score for the probability 0.025 and we are looking at both tails.
+
+The logic of z-scores goes both way. If the observed value is zero and we know that we are dealing with a normal distribution with $\sigma=1$, there is a 0.95 probability that the mean is in the $-1.95996 - 1.95996$ range.
+
+We know that a certain variable is normally distributed, and that the normal distribution has a standard deviation of 100. Can we design an experiment that will let us know, with a 0.9 probability or more, that the mean of the distribution is within a range of less than 10?
+
+You can use [this calculator] to obtain the z-score of a desired probability.
 
 `@hint`
-<!-- Examples of good hints: https://instructor-support.datacamp.com/en/articles/2379164-hints-best-practices. -->
-- This is an example hint.
-- This is an example hint.
+The mean value of a sample of $n$ measurements of a normally distributed variable is itself a normally distributed variable with these parameters:
+
+- $\mu\_{samples} = \mu\_{variable}$
+- $\sigma\_{samples} = \frac{\sigma\_{variable}}{\sqrt{n}}$
 
 `@possible_answers`
-- [Correct answer 1]
-- Wrong answer 2
-- Wrong answer 3
+- No, this is impossible to achieve
+- Yes, you just need to take at least 26 measurements and calculate the sample mean. There is a 0.9 probability that the variable mean is within 5 units of the mean of such a sample
+- Yes, you just need to take at least 33 measurements and calculate the sample mean. There is a 0.9 probability that the variable mean is within 5 units of the mean of such a sample
+- Yes, you just need to take at least 657 measurements and calculate the sample mean. There is a 0.9 probability that the variable mean is within 5 units of the mean of such a sample
+- [Yes, you just need to take at least 1083 measurements and calculate the sample mean. There is a 0.9 probability that the variable mean is within 5 units of the mean of such a sample]
 
 `@feedback`
-<!-- Examples of good feedback messages: https://instructor-support.datacamp.com/en/articles/2299773-exercise-success-messages.  -->
-- Perfect!
-- Error message answer 2
-- Error message answer 3
