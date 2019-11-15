@@ -84,3 +84,32 @@ Repeat the process two more times to get $P\_{t=3}(H\_T)$.
 - 0.8 - 1
 
 `@feedback`
+
+
+---
+
+## Confidence interval
+
+```yaml
+type: PureMultipleChoiceExercise
+key: 6ba65bb6d3
+xp: 50
+```
+
+Using the z-score we can calculate how likely it is that an observed value would fall in a specific range belongs to a specific normal distribution. For example, if $E(x)=0, \sigma =1$
+
+`@hint`
+<!-- Examples of good hints: https://instructor-support.datacamp.com/en/articles/2379164-hints-best-practices. -->
+- This is an example hint.
+- This is an example hint.
+
+`@possible_answers`
+- [Correct answer 1]
+- Wrong answer 2
+- Wrong answer 3
+
+`@feedback`
+<!-- Examples of good feedback messages: https://instructor-support.datacamp.com/en/articles/2299773-exercise-success-messages.  -->
+- Perfect!
+- Error message answer 2
+- Error message answer 3
