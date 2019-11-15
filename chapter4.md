@@ -141,6 +141,7 @@ When the sample size is smaller, we need to use the [t-score](https://www.statis
 
 `@hint`
 - The standard deviation of a sample is calculated using [`statistics.stdev`](https://docs.python.org/3/library/statistics.html#statistics.stdev). [It is a slightly different formula than a population's standard deviation](https://en.wikipedia.org/wiki/Bessel%27s_correction).
+- You can get the t-score [using this object](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.t.html).
 
 `@pre_exercise_code`
 ```{python}
@@ -149,13 +150,15 @@ import random
 random.seed(10)
 measurements = []
 
-for i in range(10):
+for i in range(100):
   measurements.append(random.normalvariate(50,5))
   
   
 import statistics  
+
 sampleMean = statistics.mean(measurements)
 sampleSD = statistics.stdev(measurements)
+
 ```
 
 `@sct`
