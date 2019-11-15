@@ -135,29 +135,37 @@ The z-score assumes we know the standard deviation. If we have a large enough sa
 When the sample size is smaller, we need to use the [t-score](https://www.statisticshowto.datasciencecentral.com/one-sample-t-test/). In the console there is a list of measurements, `measurements`, that were taken independently of one another. Calculate the 95% confidence interval for the mean of the population the samples were taken from.
 
 `@possible_answers`
-- [Correct answer 1]
-- Wrong answer 2
-- Wrong answer 3
+- 44.165 - 53.943
+- 43.416 - 54.692
+- 43.330 - 54.778
+- 43.111 - 54.997
+- [43.020 - 55.0879]
 
 `@hint`
 - The standard deviation of a sample is calculated using [`statistics.stdev`](https://docs.python.org/3/library/statistics.html#statistics.stdev). [It is a slightly different formula than a population's standard deviation](https://en.wikipedia.org/wiki/Bessel%27s_correction).
-- You can get the t-score [using this object](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.t.html).
+- You can get the t-score [using this calculator](https://stattrek.com/online-calculator/t-distribution.aspx). 
+- Remember that the number of degrees of freedom is one less than the sample size in this case.
+- $t = \frac{\bar{x}-\mu}{\frac{s}{\sqrt{n}}} \implies \bar{x}-\mu=\frac{t \times s}{\sqrt{n}}$
 
 `@pre_exercise_code`
 ```{python}
 import random
 
-random.seed(10)
+random.seed(0)
 measurements = []
 
-for i in range(100):
-  measurements.append(random.normalvariate(50,5))
+for i in range(10):
+  measurements.append(random.normalvariate(50,10))
   
-  
+import math
 import statistics  
 
 sampleMean = statistics.mean(measurements)
 sampleSD = statistics.stdev(measurements)
+tScore = 2.262
+diffOfMeans = tScore*sampleSD/math.sqrt(len(measurements))
+
+print (sampleMean-diffOfMeans, sampleMean+diffOfMeans)
 
 ```
 
