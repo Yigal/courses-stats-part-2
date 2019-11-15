@@ -118,3 +118,47 @@ The mean value of a sample of $n$ measurements of a normally distributed variabl
 - [Yes, you just need to take at least 1083 measurements and calculate the sample mean. There is a 0.9 probability that the variable mean is within 5 units of the mean of such a sample]
 
 `@feedback`
+
+
+---
+
+## Confidence interval (unknown standard deviation)
+
+```yaml
+type: MultipleChoiceExercise
+key: 962bc9254a
+xp: 50
+```
+
+The z-score assumes we know the standard deviation. If we have a large enough sample (typically, over thirty measurements), we can usually assume that the standard deviation of the sample is close to the standard deviation of the population. 
+
+When the sample size is smaller, we need to use the [t-score](https://www.statisticshowto.datasciencecentral.com/one-sample-t-test/). In the console there is a list of measurements, `measurements`, that were taken independently of one another. Calculate the 95% confidence interval for the mean of the population the samples were taken from.
+
+`@possible_answers`
+- [Correct answer 1]
+- Wrong answer 2
+- Wrong answer 3
+
+`@hint`
+- The standard deviation of a sample is calculated using [`statistics.stdev`](https://docs.python.org/3/library/statistics.html#statistics.stdev). [It is a slightly different formula than a population's standard deviation](https://en.wikipedia.org/wiki/Bessel%27s_correction).
+
+`@pre_exercise_code`
+```{python}
+import random
+
+random.seed(10)
+measurements = []
+
+for i in range(10):
+  measurements.append(random.normalvariate(50,5))
+  
+  
+import statistics  
+sampleMean = statistics.mean(measurements)
+sampleSD = statistics.stdev(measurements)
+```
+
+`@sct`
+```{python}
+# Check https://instructor-support.datacamp.com/en/articles/2375523-course-multiple-choice-with-console-exercises on how to write feedback messages for this exercise.
+```
