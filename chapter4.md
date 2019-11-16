@@ -107,15 +107,46 @@ You can use [this calculator] to obtain the z-score of a desired probability.
 `@hint`
 The mean value of a sample of $n$ measurements of a normally distributed variable is itself a normally distributed variable with these parameters:
 
-- $\mu\_{samples} = \mu\_{variable}$
-- $\sigma\_{samples} = \frac{\sigma\_{variable}}{\sqrt{n}}$
+- $\mu\_{mean of samples} = \mu\_{variable}$
+- $\sigma\_{mean of samples} = \frac{\sigma\_{variable}}{\sqrt{n}}$
 
 `@possible_answers`
 - No, this is impossible to achieve
-- Yes, you just need to take at least 26 measurements and calculate the sample mean. There is a 0.9 probability that the variable mean is within 5 units of the mean of such a sample
-- Yes, you just need to take at least 33 measurements and calculate the sample mean. There is a 0.9 probability that the variable mean is within 5 units of the mean of such a sample
-- Yes, you just need to take at least 657 measurements and calculate the sample mean. There is a 0.9 probability that the variable mean is within 5 units of the mean of such a sample
-- [Yes, you just need to take at least 1083 measurements and calculate the sample mean. There is a 0.9 probability that the variable mean is within 5 units of the mean of such a sample]
+- Yes, you need to take at least 26 measurements and calculate the sample mean. There is a 0.9 probability that the variable mean is within 5 units of the mean of such a sample
+- Yes, you need to take at least 33 measurements and calculate the sample mean. There is a 0.9 probability that the variable mean is within 5 units of the mean of such a sample
+- Yes, you need to take at least 657 measurements and calculate the sample mean. There is a 0.9 probability that the variable mean is within 5 units of the mean of such a sample
+- [Yes, you need to take at least 1083 measurements and calculate the sample mean. There is a 0.9 probability that the variable mean is within 5 units of the mean of such a sample]
+
+`@feedback`
+
+
+---
+
+## Margin of error
+
+```yaml
+type: PureMultipleChoiceExercise
+key: eceb6353fc
+xp: 50
+```
+
+The margin of error is half the size of the confidence interval. We run the experiment from the previous question with 2025 measurements. What is our margin of error for a 90% confidence interval?
+
+Remember that $\sigma\_{variable} = 100$
+
+Select the correct range
+
+`@hint`
+- $\sigma\_{mean of samples} = \frac{\sigma\_{variable}}{\sqrt{n}}$
+- [This calculator](https://planetcalc.com/7803/) lets you calculate a Z-score from a probability
+
+`@possible_answers`
+- 0-1
+- 1-2
+- 2-3
+- [3-4]
+- 4-5
+- 5-6
 
 `@feedback`
 
