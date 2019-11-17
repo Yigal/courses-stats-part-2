@@ -204,3 +204,54 @@ print (sampleMean-diffOfMeans, sampleMean+diffOfMeans)
 ```{python}
 # Check https://instructor-support.datacamp.com/en/articles/2375523-course-multiple-choice-with-console-exercises on how to write feedback messages for this exercise.
 ```
+
+---
+
+## Maximum likelihood estimate
+
+```yaml
+type: MultipleChoiceExercise
+key: 830d0b1967
+xp: 50
+```
+
+Read [this explanation of maximum likelihood estimates](https://towardsdatascience.com/probability-concepts-explained-maximum-likelihood-estimation-c7b4342fdbb1). 
+
+In the variable `measurements` we have data that we know follows the [exponential distribution](https://en.wikipedia.org/wiki/Exponential_distribution). Find the best value for $\lambda$.
+
+- The probability distribution for $x>0$ is $f(x; \lambda) = \lambda \times e^{-\lambda x}$
+- The probability of a set of $n$ measurements called $X$ is:
+
+$f(X; \lambda) = \prod{\lambda \times e^{-\lambda x}} = \lambda^n \prod{e^{-\lambda x}} = \lambda^n e^{\sum -\lambda x} = \lambda^n e^{-\lambda \sum x}$
+
+- The derivative is
+
+$\frac{\partial f(X; \lambda)}{\partial \lambda} = $
+
+`@possible_answers`
+- [Correct answer 1]
+- Wrong answer 2
+- Wrong answer 3
+
+`@hint`
+
+
+`@pre_exercise_code`
+```{python}
+import random
+
+random.seed(10)
+
+measurements = []
+
+for i in range(100):
+  measurements.append(random.expovariate(2))
+
+  
+
+```
+
+`@sct`
+```{python}
+# Check https://instructor-support.datacamp.com/en/articles/2375523-course-multiple-choice-with-console-exercises on how to write feedback messages for this exercise.
+```
