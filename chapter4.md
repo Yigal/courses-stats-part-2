@@ -45,8 +45,6 @@ The initial probabilities are $p\_{t=0}(H\_0) = 0.5, p\_{t=0}(H\_H) = p\_{t=0}(H
 
 After we throw the coin three times and get tail on each one, what is the probability that the coin is weighed towards tail? Select the correct range.
 
-
-
 `@hint`
 We can call the event of getting tail once T. The conditional probabilities are:
 
@@ -218,7 +216,6 @@ xp: 50
 Read [this explanation of maximum likelihood estimates](https://towardsdatascience.com/probability-concepts-explained-maximum-likelihood-estimation-c7b4342fdbb1). 
 
 In the variable `measurements` we have data that we know follows the [exponential distribution](https://en.wikipedia.org/wiki/Exponential_distribution). Find the best value for $\lambda$, select the correct range
-
 
 `@possible_answers`
 - 0 - 0.5
