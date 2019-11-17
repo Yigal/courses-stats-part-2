@@ -222,11 +222,11 @@ In the variable `measurements` we have data that we know follows the [exponentia
 - The probability distribution for $x>0$ is $f(x; \lambda) = \lambda \times e^{-\lambda x}$
 - The probability of a set of $n$ measurements called $X$ is:
 
-$f(X; \lambda) = \prod{\lambda \times e^{-\lambda x}} = \lambda^n \prod{e^{-\lambda x}} = \lambda^n e^{\sum -\lambda x} = \lambda^n e^{-\lambda \sum x}$
+$f(X; \lambda) = \prod{\lambda e^{-\lambda x}} = \lambda^n \prod{e^{-\lambda x}} = \lambda^n e^{\sum -\lambda x} = \lambda^n e^{-\lambda \sum x}$
 
 - The derivative is
 
-$\frac{\partial f(X; \lambda)}{\partial \lambda} = $
+$\frac{\partial f(X; \lambda)}{\partial \lambda} = \lambda^n \frac{\partial e^{\sum -\lambda x}}{\partial \lambda}$
 
 `@possible_answers`
 - [Correct answer 1]
