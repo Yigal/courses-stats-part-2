@@ -217,24 +217,33 @@ xp: 50
 
 Read [this explanation of maximum likelihood estimates](https://towardsdatascience.com/probability-concepts-explained-maximum-likelihood-estimation-c7b4342fdbb1). 
 
-In the variable `measurements` we have data that we know follows the [exponential distribution](https://en.wikipedia.org/wiki/Exponential_distribution). Find the best value for $\lambda$.
+In the variable `measurements` we have data that we know follows the [exponential distribution](https://en.wikipedia.org/wiki/Exponential_distribution). Find the best value for $\lambda$, select the correct range
 
+
+`@possible_answers`
+- 0 - 0.5
+- 0.5 - 1.5
+- [1.5 - 2.5]
+- 2.5 - 3.5
+
+`@hint`
 - The probability distribution for $x>0$ is $f(x; \lambda) = \lambda \times e^{-\lambda x}$
-- The probability of a set of $n$ measurements called $X$ is:
+- The probability distribution of a set of $n$ measurements called $X$ is:
 
-$f(X; \lambda) = \prod{\lambda e^{-\lambda x}} = \lambda^n \prod{e^{-\lambda x}} = \lambda^n e^{\sum -\lambda x} = \lambda^n e^{-\lambda \sum x}$
+$f(X; \lambda) = \prod{\lambda e^{-\lambda x}} = \lambda^n \prod{e^{-\lambda x}} = \lambda^n e^{\sum -\lambda x} = \lambda^n e^{\lambda \sum -x}$
+
+- To simplify, let's define $S \equiv \sum -x = - \sum x$ 
+
+$f(X; \lambda) = \lambda^n e^{\lambda S}$
 
 - The derivative is
 
-$\frac{\partial f(X; \lambda)}{\partial \lambda} = \lambda^n \frac{\partial e^{\sum -\lambda x}}{\partial \lambda}$
+$\frac{\partial f(X; \lambda)}{\partial \lambda}$
+$= \lambda^n \frac{\partial e^{\lambda S}}{\partial \lambda} + e^{\lambda S}\frac{\partial \lambda^n}{\partial \lambda}$
+$= \lambda^n S e^{\lambda S} + e^{\lambda S}n\lambda^{n-1}$
+$= \lambda^{n-1} e^{\lambda S} (\lambda S + n)$
 
-`@possible_answers`
-- [Correct answer 1]
-- Wrong answer 2
-- Wrong answer 3
-
-`@hint`
-
+- In the extreme point (in this case, maximum $f(X; \lambda)$) the derivative is zero. Ignoring the possibility $\lambda = 0$, there is only one way for the derivative to be zero.
 
 `@pre_exercise_code`
 ```{python}
@@ -246,6 +255,13 @@ measurements = []
 
 for i in range(100):
   measurements.append(random.expovariate(2))
+  
+  
+"""
+import statistics
+
+print (1/statistics.mean(measurements))
+"""
 
   
 
