@@ -1,6 +1,8 @@
 ---
 title: 'Multivariate Distributions'
 description: 'Multivariate Distributions'
+attachments:
+    slides_link: 'https://s3.amazonaws.com/assets.datacamp.com/production/course_22798/slides/chapter1.pdf'
 ---
 
 ## Looking at Associations with Multivariate Categorical Data
