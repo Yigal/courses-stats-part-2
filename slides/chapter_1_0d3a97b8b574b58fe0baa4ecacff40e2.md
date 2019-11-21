@@ -27,6 +27,7 @@ title: Coursera Instractor
 ```yaml
 type: FullSlide
 key: e0ce3b753f
+disable_transition: false
 hide_title: true
 ```
 
