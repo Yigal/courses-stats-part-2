@@ -19,6 +19,22 @@ title: Coursera Instructor
 
 ---
 
+## Insert title here...
+
+```yaml
+type: FullSlide
+key: 73b8c00556
+hide_title: true
+```
+
+`@part1`
+
+
+`@script`
+
+
+---
+
 ## Let's practice!
 
 ```yaml
