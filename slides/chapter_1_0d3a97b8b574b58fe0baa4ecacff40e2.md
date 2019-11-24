@@ -2,8 +2,8 @@
 key: 0d3a97b8b574b58fe0baa4ecacff40e2
 title: 'Insert title here'
 video_link:
-    mp4: 'https://itc-public-44088-1948-9568-us-east-1-408819489568-us-east-1.s3.amazonaws.com/input/C1W3P1_Looking_at_Associations_with_Multivariate_Categorical_Data-converted.mp4'
-    hls: 's3://itc-public-44088-1948-9568-us-east-1-408819489568-us-east-1/output/hls/C1W3P1LookingatAssociationswithMultivariateCategoricalDataconverted.m3u8'
+    mp4: 'https://itc-public-44088-1948-9568-us-east-1-408819489568-us-east-1.s3.amazonaws.com/input/C2W2P1_estimating-a-population-proportion-with-confidence.mp4'
+    hls: 'https://itc-public-44088-1948-9568-us-east-1-408819489568-us-east-1.s3.amazonaws.com/output/hls/C2W2P1estimatingapopulationproportionwithconfidence.m3u8'
 ---
 
 ## Looking at Associations with Multivariate Categorical Data
