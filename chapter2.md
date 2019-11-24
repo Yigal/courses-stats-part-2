@@ -1,8 +1,7 @@
 ---
 title: 'Hypothesis Testing'
 description: 'Need to understand how to derive a hypothesis from a given problem, the difference between the null and the alternative hypothesis, what does the rejection region mean, types of errors including how to calculate it + explain their meaning, and know when to use each statistical test and calculate the critical value for each.'
-attachments:
-    slides_link: 'https://s3.amazonaws.com/assets.datacamp.com/production/course_22798/slides/chapter4.pdf'
+attachments: {}
 ---
 
 ## Hypothesis, null and otherwise
@@ -951,29 +950,3 @@ Use [this calculator](https://www.mathsisfun.com/data/chi-square-calculator.html
 ```{python}
 # Check https://instructor-support.datacamp.com/en/articles/2375523-course-multiple-choice-with-console-exercises on how to write feedback messages for this exercise.
 ```
-
----
-
-## Setting up a test for a population proportion
-
-```yaml
-type: VideoExercise
-key: ee0e9dcb86
-xp: 50
-```
-
-`@projector_key`
-2f0829d1be60710a6b0bf4328b1c1ff4
-
----
-
-## Setting Up a Test for a Population Proportion
-
-```yaml
-type: VideoExercise
-key: 2402fa77f5
-xp: 50
-```
-
-`@projector_key`
-d7c254144befbd5456025e59e4f6a256
