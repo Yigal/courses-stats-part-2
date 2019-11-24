@@ -964,3 +964,16 @@ xp: 50
 
 `@projector_key`
 2f0829d1be60710a6b0bf4328b1c1ff4
+
+---
+
+## Setting Up a Test for a Population Proportion
+
+```yaml
+type: VideoExercise
+key: 2402fa77f5
+xp: 50
+```
+
+`@projector_key`
+d7c254144befbd5456025e59e4f6a256
