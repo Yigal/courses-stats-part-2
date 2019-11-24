@@ -5,6 +5,19 @@ attachments:
     slides_link: 'https://s3.amazonaws.com/assets.datacamp.com/production/course_22798/slides/chapter1.pdf'
 ---
 
+## Looking at Associations with Multivariate Categorical Data
+
+```yaml
+type: VideoExercise
+key: d388985d36
+xp: 50
+```
+
+`@projector_key`
+9a0dc36c27277778e25aaba8cfc271a8
+
+---
+
 ## Calculate covariance
 
 ```yaml
@@ -291,17 +304,3 @@ Does this correlation between medicine and dying mean that medicine is actually 
 - [No, because both variables are caused by a third variable, how sick a person is. Sicker people get more medicine and are more likely to die,]
 
 `@feedback`
-
-
----
-
-## Insert exercise title here
-
-```yaml
-type: VideoExercise
-key: d388985d36
-xp: 50
-```
-
-`@projector_key`
-9a0dc36c27277778e25aaba8cfc271a8
