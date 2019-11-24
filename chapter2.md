@@ -964,3 +964,16 @@ Use [this calculator](https://www.mathsisfun.com/data/chi-square-calculator.html
 ```{python}
 # Check https://instructor-support.datacamp.com/en/articles/2375523-course-multiple-choice-with-console-exercises on how to write feedback messages for this exercise.
 ```
+
+---
+
+## Testing a One Population Proportion
+
+```yaml
+type: VideoExercise
+key: d7aabf5307
+xp: 50
+```
+
+`@projector_key`
+599877d8dc66315c9df6d489c8d1dfe6
