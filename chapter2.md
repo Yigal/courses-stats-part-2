@@ -1,7 +1,8 @@
 ---
 title: 'Hypothesis Testing'
 description: 'Need to understand how to derive a hypothesis from a given problem, the difference between the null and the alternative hypothesis, what does the rejection region mean, types of errors including how to calculate it + explain their meaning, and know when to use each statistical test and calculate the critical value for each.'
-attachments: {}
+attachments:
+    slides_link: 'https://s3.amazonaws.com/assets.datacamp.com/production/course_22798/slides/chapter2.pdf'
 ---
 
 ## Hypothesis, null and otherwise
@@ -98,6 +99,19 @@ Before throwing dice Gary the Gambler prays to [Fortuna](https://en.wikipedia.or
 
 `@feedback`
 
+
+---
+
+## Setting Up a Test for a Population Proportion
+
+```yaml
+type: VideoExercise
+key: 7b5e889d93
+xp: 50
+```
+
+`@projector_key`
+e844768914ab18c3958e1c39a9aca6ff
 
 ---
 
