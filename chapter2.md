@@ -264,3 +264,16 @@ xp: 50
 
 `@projector_key`
 cdcdc40ae63836f5936bb4881d4b4e84
+
+---
+
+## Confidence Intervals for Differences between Population Parameters
+
+```yaml
+type: VideoExercise
+key: c8b9c0f39d
+xp: 50
+```
+
+`@projector_key`
+114a1fc82b7678befbfcd5430a43cce1
