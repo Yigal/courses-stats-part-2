@@ -156,6 +156,19 @@ xp: 50
 
 ---
 
+## Estimating a Difference in Population Means with Confidence (for Independent Groups)
+
+```yaml
+type: VideoExercise
+key: a83133ac2d
+xp: 50
+```
+
+`@projector_key`
+f9a1e241e7ebab95ac48f2b38f1ce52a
+
+---
+
 ## Confidence interval (unknown standard deviation)
 
 ```yaml
@@ -241,13 +254,13 @@ Select the correct range
 
 ---
 
-## Estimating a Difference in Population Means with Confidence (for Independent Groups)
+## Introduction to Confidence Intervals in Python
 
 ```yaml
 type: VideoExercise
-key: a83133ac2d
+key: fe1d1353aa
 xp: 50
 ```
 
 `@projector_key`
-f9a1e241e7ebab95ac48f2b38f1ce52a
+cdcdc40ae63836f5936bb4881d4b4e84

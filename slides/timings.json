@@ -321,6 +321,34 @@
         "indexh": 0,
         "indexf": 0
       }
+    },
+    {
+      "timing": 0.00222088698630137,
+      "state": {
+        "indexh": 1
+      }
+    }
+  ],
+  "slides/chapter_2_cdcdc40ae63836f5936bb4881d4b4e84.md": [
+    {
+      "timing": 0,
+      "state": {
+        "indexh": 0,
+        "indexf": -1
+      }
+    },
+    {
+      "timing": 0.0006047644628099173,
+      "state": {
+        "indexh": 0,
+        "indexf": 0
+      }
+    },
+    {
+      "timing": 0.0012989972451790633,
+      "state": {
+        "indexh": 1
+      }
     }
   ]
 }
