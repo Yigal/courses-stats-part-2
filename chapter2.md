@@ -5,6 +5,32 @@ attachments:
     slides_link: 'https://s3.amazonaws.com/assets.datacamp.com/production/course_22798/slides/chapter2.pdf'
 ---
 
+## Setting Up a Test for a Population Proportion
+
+```yaml
+type: VideoExercise
+key: 7b5e889d93
+xp: 50
+```
+
+`@projector_key`
+e844768914ab18c3958e1c39a9aca6ff
+
+---
+
+## Testing a One Population Proportion
+
+```yaml
+type: VideoExercise
+key: d7aabf5307
+xp: 50
+```
+
+`@projector_key`
+599877d8dc66315c9df6d489c8d1dfe6
+
+---
+
 ## Hypothesis, null and otherwise
 
 ```yaml
@@ -99,19 +125,6 @@ Before throwing dice Gary the Gambler prays to [Fortuna](https://en.wikipedia.or
 
 `@feedback`
 
-
----
-
-## Setting Up a Test for a Population Proportion
-
-```yaml
-type: VideoExercise
-key: 7b5e889d93
-xp: 50
-```
-
-`@projector_key`
-e844768914ab18c3958e1c39a9aca6ff
 
 ---
 
@@ -466,6 +479,19 @@ In the extreme case of a sample of one, the mean is equal to the sample value. W
 
 `@feedback`
 
+
+---
+
+## Setting Up a Test of Difference in Population Proportions
+
+```yaml
+type: VideoExercise
+key: b0ee0356cd
+xp: 50
+```
+
+`@projector_key`
+f8bd5d796d53b7da1901c1bee68b7d88
 
 ---
 
@@ -967,13 +993,13 @@ Use [this calculator](https://www.mathsisfun.com/data/chi-square-calculator.html
 
 ---
 
-## Testing a One Population Proportion
+## Testing a Difference in Population Proportions
 
 ```yaml
 type: VideoExercise
-key: d7aabf5307
+key: 1942d51e98
 xp: 50
 ```
 
 `@projector_key`
-599877d8dc66315c9df6d489c8d1dfe6
+bb3c92b1aa70462bad9abbab822b98e8
