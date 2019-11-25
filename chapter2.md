@@ -31,6 +31,19 @@ xp: 50
 
 ---
 
+## Demo: Seeing Theory
+
+```yaml
+type: VideoExercise
+key: 36f03d7f23
+xp: 50
+```
+
+`@projector_key`
+d710976aaa4596ac14bb2aa99dc56582
+
+---
+
 ## Confidence interval (known standard deviation)
 
 ```yaml
@@ -119,6 +132,19 @@ print (sampleMean-diffOfMeans, sampleMean+diffOfMeans)
 
 ---
 
+## Assumptions for a Single Population Proportion Confidence Interval
+
+```yaml
+type: VideoExercise
+key: 8eefbbc178
+xp: 50
+```
+
+`@projector_key`
+b700f500d75b3bf11868143ec9175753
+
+---
+
 ## Margin of error
 
 ```yaml
@@ -146,17 +172,3 @@ Select the correct range
 - 5-6
 
 `@feedback`
-
-
----
-
-## Demo: Seeing Theory
-
-```yaml
-type: VideoExercise
-key: 36f03d7f23
-xp: 50
-```
-
-`@projector_key`
-d710976aaa4596ac14bb2aa99dc56582

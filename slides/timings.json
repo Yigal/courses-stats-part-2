@@ -174,5 +174,27 @@
         "indexh": 1
       }
     }
+  ],
+  "slides/chapter_2_b700f500d75b3bf11868143ec9175753.md": [
+    {
+      "timing": 0,
+      "state": {
+        "indexh": 0,
+        "indexf": -1
+      }
+    },
+    {
+      "timing": 0.0021004390243902437,
+      "state": {
+        "indexh": 0,
+        "indexf": 0
+      }
+    },
+    {
+      "timing": 0.005765341463414634,
+      "state": {
+        "indexh": 1
+      }
+    }
   ]
 }
