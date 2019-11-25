@@ -104,6 +104,32 @@ xp: 50
 
 ---
 
+## Interpretations & Assumptions for Two Population Proportion Intervals
+
+```yaml
+type: VideoExercise
+key: 575f4e0906
+xp: 50
+```
+
+`@projector_key`
+92bca206647cfa6fca4636539dfdf9c6
+
+---
+
+## Assumptions for a Single Population Proportion Confidence Interval
+
+```yaml
+type: VideoExercise
+key: 8eefbbc178
+xp: 50
+```
+
+`@projector_key`
+b700f500d75b3bf11868143ec9175753
+
+---
+
 ## Confidence interval (unknown standard deviation)
 
 ```yaml
@@ -158,19 +184,6 @@ print (sampleMean-diffOfMeans, sampleMean+diffOfMeans)
 
 ---
 
-## Assumptions for a Single Population Proportion Confidence Interval
-
-```yaml
-type: VideoExercise
-key: 8eefbbc178
-xp: 50
-```
-
-`@projector_key`
-b700f500d75b3bf11868143ec9175753
-
----
-
 ## Margin of error
 
 ```yaml
@@ -202,13 +215,13 @@ Select the correct range
 
 ---
 
-## Interpretations & Assumptions for Two Population Proportion Intervals
+## Estimating a Population Mean with Confidence
 
 ```yaml
 type: VideoExercise
-key: 575f4e0906
+key: 8016ec0d26
 xp: 50
 ```
 
 `@projector_key`
-92bca206647cfa6fca4636539dfdf9c6
+14c86b0a27e65a6d0e2e1801a3e3531e
