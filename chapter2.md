@@ -225,3 +225,16 @@ xp: 50
 
 `@projector_key`
 14c86b0a27e65a6d0e2e1801a3e3531e
+
+---
+
+## Estimating a Mean Difference for Paired Data
+
+```yaml
+type: VideoExercise
+key: 510f4afe68
+xp: 50
+```
+
+`@projector_key`
+9abcdda00e7e7211de47e3b0bb2b175c
