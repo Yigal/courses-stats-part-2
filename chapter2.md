@@ -130,6 +130,32 @@ b700f500d75b3bf11868143ec9175753
 
 ---
 
+## Estimating a Population Mean with Confidence
+
+```yaml
+type: VideoExercise
+key: 8016ec0d26
+xp: 50
+```
+
+`@projector_key`
+14c86b0a27e65a6d0e2e1801a3e3531e
+
+---
+
+## Estimating a Mean Difference for Paired Data
+
+```yaml
+type: VideoExercise
+key: 510f4afe68
+xp: 50
+```
+
+`@projector_key`
+9abcdda00e7e7211de47e3b0bb2b175c
+
+---
+
 ## Confidence interval (unknown standard deviation)
 
 ```yaml
@@ -215,26 +241,13 @@ Select the correct range
 
 ---
 
-## Estimating a Population Mean with Confidence
+## Estimating a Difference in Population Means with Confidence (for Independent Groups)
 
 ```yaml
 type: VideoExercise
-key: 8016ec0d26
+key: a83133ac2d
 xp: 50
 ```
 
 `@projector_key`
-14c86b0a27e65a6d0e2e1801a3e3531e
-
----
-
-## Estimating a Mean Difference for Paired Data
-
-```yaml
-type: VideoExercise
-key: 510f4afe68
-xp: 50
-```
-
-`@projector_key`
-9abcdda00e7e7211de47e3b0bb2b175c
+f9a1e241e7ebab95ac48f2b38f1ce52a
