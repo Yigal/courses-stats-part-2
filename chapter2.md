@@ -78,6 +78,32 @@ The mean value of a sample of $n$ measurements of a normally distributed variabl
 
 ---
 
+## Conservative Approach & Sample Size Consideration
+
+```yaml
+type: VideoExercise
+key: c93174867b
+xp: 50
+```
+
+`@projector_key`
+3142b121e54383fbe7da7cf697111d1f
+
+---
+
+## Estimating a Difference in Population Proportions with Confidence
+
+```yaml
+type: VideoExercise
+key: f64b82c94b
+xp: 50
+```
+
+`@projector_key`
+2edcb6505e048ade269de4a5dc98a3a9
+
+---
+
 ## Confidence interval (unknown standard deviation)
 
 ```yaml
@@ -176,26 +202,13 @@ Select the correct range
 
 ---
 
-## Conservative Approach & Sample Size Consideration
+## Interpretations & Assumptions for Two Population Proportion Intervals
 
 ```yaml
 type: VideoExercise
-key: c93174867b
+key: 575f4e0906
 xp: 50
 ```
 
 `@projector_key`
-3142b121e54383fbe7da7cf697111d1f
-
----
-
-## Estimating a Difference in Population Proportions with Confidence
-
-```yaml
-type: VideoExercise
-key: f64b82c94b
-xp: 50
-```
-
-`@projector_key`
-2edcb6505e048ade269de4a5dc98a3a9
+92bca206647cfa6fca4636539dfdf9c6
