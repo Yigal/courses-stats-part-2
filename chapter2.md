@@ -186,3 +186,16 @@ xp: 50
 
 `@projector_key`
 3142b121e54383fbe7da7cf697111d1f
+
+---
+
+## Estimating a Difference in Population Proportions with Confidence
+
+```yaml
+type: VideoExercise
+key: f64b82c94b
+xp: 50
+```
+
+`@projector_key`
+2edcb6505e048ade269de4a5dc98a3a9
