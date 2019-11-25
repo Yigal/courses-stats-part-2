@@ -86,5 +86,71 @@
         "indexh": 1
       }
     }
+  ],
+  "slides/chapter_2_bb3c92b1aa70462bad9abbab822b98e8.md": [
+    {
+      "timing": 0,
+      "state": {
+        "indexh": 0,
+        "indexf": -1
+      }
+    },
+    {
+      "timing": 0.0008266174242424243,
+      "state": {
+        "indexh": 0,
+        "indexf": 0
+      }
+    },
+    {
+      "timing": 0.001901846590909091,
+      "state": {
+        "indexh": 1
+      }
+    }
+  ],
+  "slides/chapter_2_4b39ac834b275b5b2b2680ebb26c34a3.md": [
+    {
+      "timing": 0,
+      "state": {
+        "indexh": 0,
+        "indexf": -1
+      }
+    },
+    {
+      "timing": 0.0012177103825136613,
+      "state": {
+        "indexh": 0,
+        "indexf": 0
+      }
+    },
+    {
+      "timing": 0.0025866448087431696,
+      "state": {
+        "indexh": 1
+      }
+    }
+  ],
+  "slides/chapter_2_6384527e6be7caa6e337e75734f88b42.md": [
+    {
+      "timing": 0,
+      "state": {
+        "indexh": 0,
+        "indexf": -1
+      }
+    },
+    {
+      "timing": 0.0006836620583717359,
+      "state": {
+        "indexh": 0,
+        "indexf": 0
+      }
+    },
+    {
+      "timing": 0.0018458863287250384,
+      "state": {
+        "indexh": 1
+      }
+    }
   ]
 }
