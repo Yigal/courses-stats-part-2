@@ -18,6 +18,19 @@ xp: 50
 
 ---
 
+## Understanding Confidence Intervals
+
+```yaml
+type: VideoExercise
+key: 08a49a3f7c
+xp: 50
+```
+
+`@projector_key`
+6384527e6be7caa6e337e75734f88b42
+
+---
+
 ## Confidence interval (known standard deviation)
 
 ```yaml
@@ -137,13 +150,13 @@ Select the correct range
 
 ---
 
-## Understanding Confidence Intervals
+## Demo: Seeing Theory
 
 ```yaml
 type: VideoExercise
-key: 08a49a3f7c
+key: 36f03d7f23
 xp: 50
 ```
 
 `@projector_key`
-6384527e6be7caa6e337e75734f88b42
+d710976aaa4596ac14bb2aa99dc56582
