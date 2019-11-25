@@ -172,3 +172,17 @@ Select the correct range
 - 5-6
 
 `@feedback`
+
+
+---
+
+## Conservative Approach & Sample Size Consideration
+
+```yaml
+type: VideoExercise
+key: c93174867b
+xp: 50
+```
+
+`@projector_key`
+3142b121e54383fbe7da7cf697111d1f
