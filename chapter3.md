@@ -1003,3 +1003,16 @@ Use [this calculator](https://www.mathsisfun.com/data/chi-square-calculator.html
 ```{python}
 # Check https://instructor-support.datacamp.com/en/articles/2375523-course-multiple-choice-with-console-exercises on how to write feedback messages for this exercise.
 ```
+
+---
+
+## Bonferroni correction
+
+```yaml
+type: VideoExercise
+key: 4f1bffe8be
+xp: 50
+```
+
+`@projector_key`
+0958781a3b43ee494579227fa7a6da08
